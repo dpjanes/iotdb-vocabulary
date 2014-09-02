@@ -1,0 +1,218 @@
+{
+	"@context" : {
+		"iot-facet" : "https://iotdb.org/pub/iot-facet#",
+		"iot" : "https://iotdb.org/pub/iot#"
+	},
+	"iot:definitions" : [
+		{
+			"@id" : "iot-facet:device.gateway",
+			"@type" : "iot:facet",
+			"iot:name": "device.gateway"
+		},
+		{
+			"@id" : "iot-facet:device.media",
+			"@type" : "iot:facet",
+			"iot:name": "device.media",
+			"iot:example" : "doors, windows"
+		},
+		{
+			"@id" : "iot-facet:fixture",
+			"@type" : "iot:facet",
+			"iot:name": "device.fixture",
+			"iot:example" : "doors, windows"
+		},
+		{
+			"@id" : "iot-facet:device.control",
+			"@type" : "iot:facet",
+			"iot:name": "device.control",
+			"iot:description" : "Human input control"
+		},
+		{
+			"@id" : "iot-facet:device.control.switch",
+			"@type" : "iot:facet",
+			"iot:name": "device.control.switch"
+		},
+		{
+			"@id" : "iot-facet:device.control.dimmer",
+			"@type" : "iot:facet",
+			"iot:name": "device.control.dimmer"
+		},
+		{
+			"@id" : "iot-facet:device.control.keyboard",
+			"@type" : "iot:facet",
+			"iot:name": "device.control.keyboard"
+		},
+		{
+			"@id" : "iot-facet:device.control.keypad",
+			"@type" : "iot:facet",
+			"iot:name": "device.control.keypad",
+            "iot:description" : "something less than a full keyboard"
+		},
+		{
+			"@id" : "iot-facet:device.control.mouse",
+			"@type" : "iot:facet",
+			"iot:name": "device.control.mouse"
+		},
+		{
+			"@id" : "iot-facet:device.control.touchpad",
+			"@type" : "iot:facet",
+			"iot:name": "device.control.touchpad"
+		},
+		{
+			"@id" : "iot-facet:device.control.dial",
+			"@type" : "iot:facet",
+			"iot:name": "device.control.dial"
+		},
+		{
+			"@id" : "iot-facet:device.appliance",
+			"@type" : "iot:facet",
+			"iot:name": "device.appliance",
+			"iot:description" : "consumer appliance",
+			"iot:example" : "a TV, a stove, a toaster"
+		},
+		{
+			"@id" : "iot-facet:device.toy",
+			"@type" : "iot:facet",
+			"iot:name": "device.toy",
+			"iot:description" : "something that can be played with",
+			"iot:example" : "a model train, a quadcopter"
+		},
+		{
+			"@id" : "iot-facet:device.wearable",
+			"@type" : "iot:facet",
+			"iot:name": "device.wearable",
+			"iot:description" : "a wearable / personal area network device",
+			"iot:example" : "heartrate monitor, smart watch"
+		},
+		{
+			"@id" : "iot-facet:device.security",
+			"@type" : "iot:facet",
+			"iot:name": "device.security",
+			"iot:description" : "part of a security system"
+		},
+		{
+			"@id" : "iot-facet:device.sensor",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.spatial",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.spatial",
+            "iot:description" : "x/y/z accelerometers, compass, heading, etc."
+		},
+		{
+			"@id" : "iot-facet:device.sensor.fire",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.fire"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.heat",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.heat"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.chemical",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.chemical"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.chemical.carbon-monoxide",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.chemical.carbon-monoxide"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.chemical.carbon-dioxide",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.chemical.carbon-dioxide"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.motion",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.motion"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.presence",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.presence"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.particulates",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.particulates"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.shatter",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.shatter"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.humidty",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.humidty"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.sound",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.sound"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.temperature",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.temperature"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.water",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.water"
+		},
+		{
+			"@id" : "iot-facet:device.sensor.humidity",
+			"@type" : "iot:facet",
+			"iot:name": "device.sensor.humidity"
+		},
+		{
+			"@id" : "iot-facet:device.lighting",
+			"@type" : "iot:facet",
+			"iot:name": "device.lighting",
+			"iot:example" : "Philips Hue, TCP Lighting, LIFX"
+		},
+		{
+			"@id" : "iot-facet:device.climate",
+			"@type" : "iot:facet",
+			"iot:name": "device.climate",
+			"iot:description" : "climate control"
+		},
+		{
+			"@id" : "iot-facet:device.climate.heating",
+			"@type" : "iot:facet",
+			"iot:name": "device.climate.heating"
+		},
+		{
+			"@id" : "iot-facet:device.climate.cooling",
+			"@type" : "iot:facet",
+			"iot:name": "device.climate.cooling"
+		},
+		{
+			"@id" : "iot-facet:fixture",
+			"@type" : "iot:facet",
+			"iot:name" : "fixture",
+			"iot:example" : "doors, windows"
+		},
+		{
+			"@id" : "iot-facet:fixture.door",
+			"@type" : "iot:facet",
+			"iot:name" : "fixture.door"
+		},
+		{
+			"@id" : "iot-facet:fixture.window",
+			"@type" : "iot:facet",
+			"iot:name" : "fixture.window"
+		},
+		{
+			"@id" : "iot-facet:zone",
+			"@type" : "iot:facet",
+			"iot:name" : "zone"
+		}
+	]
+}

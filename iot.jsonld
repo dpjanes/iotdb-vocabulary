@@ -1,0 +1,248 @@
+{
+    "@context" : {
+        "iot" : "https://iotdb.org/pub/iot#",
+        "schema" : "http://schema.org/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "owl" : "http://www.w3.org/2002/07/owl#",
+        "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+
+        "iot:additionalType" : {
+            "@type" : "@id"
+        },
+        "iot:url" : {
+            "@type" : "@id"
+        },
+        "iot:image" : {
+            "@type" : "@id"
+        },
+        "iot:sameAs" : {
+            "@type" : "@id"
+        },
+        "iot:purpose" : {
+            "@type" : "@id"
+        },
+        "iot:facet" : {
+            "@type" : "@id"
+        },
+        "iot:unit" : {
+            "@type" : "@id"
+        },
+        "iot:item" : {
+            "@type" : "@id"
+        },
+        "iot:place" : {
+            "@type" : "@id"
+        },
+        "iot:model" : {
+            "@type" : "@id"
+        },
+        "iot:thing" : {
+            "@type" : "@id"
+        },
+        "iot:place-placement" : {
+            "@type" : "@id"
+        },
+        "owl:sameAs" : {
+            "@type" : "@id",
+            "@id" : "owl:sameAs"
+        }
+    },
+    "iot:items" : [
+        {
+            "@id" : "iot:name",
+            "iot:name" : "name",
+            "iot:description" : "the name of the item",
+            "owl:sameAs" : "schema:name"
+        },
+        {
+            "@id" : "iot:description",
+            "iot:name" : "description",
+            "iot:description" : "a short description of the item",
+            "owl:sameAs" : "schema:description"
+        },
+        {
+            "@id" : "iot:additionalType",
+            "owl:sameAs" : "schema:additionalType"
+        },
+        {
+            "@id" : "iot:alternateName",
+            "owl:sameAs" : "schema:alternateName"
+        },
+        {
+            "@id" : "iot:image",
+            "owl:sameAs" : "schema:image"
+        },
+        {
+            "@id" : "iot:potentialAction",
+            "owl:sameAs" : "schema:potentialAction"
+        },
+        {
+            "@id" : "iot:sameAs",
+            "owl:sameAs" : "schema:sameAs"
+        },
+        {
+            "@id" : "iot:url",
+            "owl:sameAs" : "schema:url"
+        },
+
+        {
+            "@id" : "iot:uuid",
+            "iot:name" : "UUID",
+            "iot:description" : "a UUID for whatever this is"
+        },
+        {
+            "@id" : "iot:help",
+            "iot:name" : "help",
+            "iot:description" : "additional help for this item"
+        },
+        {
+            "@id" : "iot:examples",
+            "iot:name" : "examples",
+            "iot:description" : "examples of how this may be used"
+        },
+        {
+            "@id" : "iot:cf",
+            "iot:name" : "cf",
+            "iot:description" : "see also, as an example or a place this is used"
+        },
+        {
+            "@id" : "iot:item",
+            "iot:name" : "item",
+            "iot:description" : "bundle related stuff together, basically a JSON-LD hack"
+        },
+        {
+            "@id" : "iot:place-location",
+            "iot:name" : "place-location",
+            "iot:description" : "broadly, where a Thing is",
+            "iot:help" : "for example, '525 Old Orchard Place', 'David'"
+        },
+        {
+            "@id" : "iot:place-floor",
+            "iot:name" : "place-floor",
+            "iot:description" : "the floor of a building where a Thing is, inside of the iot:place-location",
+            "iot:help" : "for example, 'First Floor', 'Basement'"
+        },
+        {
+            "@id" : "iot:place-room",
+            "iot:name" : "place-room",
+            "iot:description" : "the room where a Thing is, inside of the iot:place-location",
+            "iot:help" : "see iot-placement:* for common values"
+        },
+        {
+            "@id" : "iot:place-placement",
+            "iot:name" : "place-placement",
+            "iot:description" : "a semantic code for where Things can be",
+            "iot:help" : "see iot-placement:*. roughly corresponds to iot:place-room, or where on a person or animal's body"
+        },
+
+        {
+            "@id" : "iot:unit",
+            "iot:name" : "unit",
+            "iot:description" : "the measurement-type units used",
+            "iot:help" : "see iot-unit:* for common values"
+        },
+        {
+            "@id" : "iot:unit-multiplier",
+            "iot:name" : "unit-multiplier",
+            "iot:description" : "the value for the measurement-type must be multiplied by this",
+            "iot:help" : "see iot-unit:*. For example, KHz is hertz with multiplier 1000"
+        },
+        {
+            "@id" : "iot:unit-property",
+            "iot:name" : "unit-property",
+            "iot:description" : "the property being measured, e.g. length, pressure...",
+            "iot:help" : "see iot-unit:*."
+        },
+        {
+            "@id" : "iot:unit-system",
+            "iot:name" : "unit-system",
+            "iot:description" : "the measurement system, e.g. si, imperial, us, traditional",
+            "iot:help" : "see iot-unit:*."
+        },
+        {
+            "@id" : "iot:arithmetic-precision",
+            "iot:name" : "arithmetic-precision",
+            "iot:description" : "the arithmetic precision of a value, i.e. valid digits past the decimal place"
+        },
+        {
+            "@id" : "iot:vector",
+            "iot:name" : "vector",
+            "iot:description" : "Vector key",
+            "iot:help": "Attributes with the same vector value should be considered part of a vector"
+        },
+        {
+            "@id" : "iot:related-role",
+            "iot:name" : "related-role",
+            "iot:description" : "this attribute is related to @id by role",
+            "iot:help": "typically the 'reading' for a 'control' or visa versa",
+            "iot:cf": "iot:role"
+        },
+        {
+            "@id" : "iot:role",
+            "iot:name" : "role",
+            "iot:description" : "what role does this value play",
+            "iot:help" : "typically iot:role-reading or iot:role-control",
+            "iot:cf": [ "iot-attribute:role-control", "iot-attribute:role-reading" ]
+        },
+
+        {
+            "@id" : "iot:purpose",
+            "iot:name" : "purpose",
+            "iot:description" : "what semantic purpose does this iot:Attribute serve",
+            "iot:help" : "see iot-attribute:* for common values"
+        },
+        {
+            "@id" : "iot:facet",
+            "iot:name" : "facet",
+            "iot:description" : "what semantic purpose does Thing serve",
+            "iot:help" : "see iot-facet:* for common values"
+        },
+        {
+            "@id" : "iot:model",
+            "iot:name" : "model",
+            "iot:description" : "relate something to an iot:Model"
+        },
+        {
+            "@id" : "iot:attribute",
+            "iot:name" : "attribute",
+            "iot:description" : "relate something (typically an iot:Model) to an iot:attribute"
+        },
+        {
+            "@id" : "iot:place",
+            "iot:name" : "place",
+            "iot:description" : "The @type for Place definiotns; predicate for relating Devices to Places",
+            "iot:help" : "Places are definitions of Places on IOTDB.org"
+        },
+        {
+            "@id" : "iot:Thing",
+            "@type" : "rdfs:Class",
+            "rdfs:isDefinedBy" : "iot:Thing",
+            "iot:name" : "Thing",
+            "iot:description" : "the @type for Thing definitions. A Thing is a specific instance of a Model."
+        },
+        {
+            "@id" : "iot:Model",
+            "@type" : "rdfs:Class",
+            "rdfs:isDefinedBy" : "iot:Model",
+            "iot:name" : "Model",
+            "iot:description" : "the @type for Models definitions. Models are the "
+        },
+        {
+            "@id" : "iot:Attribute",
+            "@type" : "rdfs:Class",
+            "rdfs:subClassOf" : "schema:Thing",
+            "rdfs:isDefinedBy" : "iot:Attribute",
+            "iot:name" : "Attribute",
+            "iot:description" : "The @type for Attribute definitions. Attributes define how to manipulate Models/Things. Use iot:attribute to relate something to an iot:Attribute"
+        },
+        {
+            "@id" : "iot:Place",
+            "@type" : "rdfs:Class",
+            "rdfs:isDefinedBy" : "iot:Place",
+            "iot:name" : "Place",
+            "iot:description" : "The @type for Place definitions. Places define a structured bundle of place related information. Use iot:place to relate something (typically a Thing) to an iot:Place"
+        }
+    ]
+}
+

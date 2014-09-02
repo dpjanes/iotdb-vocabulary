@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "iot": "https://iotdb.org/pub/iot#", 
+    "iot-attribute": "https://iotdb.org/pub/attribute#", 
+    "iot-ble": "https://iotdb.org/pub/iot-ble#", 
+    "iot-facet": "https://iotdb.org/pub/iot-facet#", 
+    "iot-js": "https://iotdb.org/pub/iot-js#", 
+    "iot-js:type": {
+      "@type": "@id"
+    }, 
+    "iot-unit": "https://iotdb.org/pub/iot-unit#"
+  }, 
+  "iot:associated": [
+        {
+            "@id" : "iot-js:ble",
+            "iot:name" : "ble",
+            "iot:description" : "Bluetooth Low Energy Bridge Driver",
+            "iot:help" : "Consult sample code for API"
+        },
+        {
+            "@id" : "iot-js:hue",
+            "iot:name" : "hue",
+            "iot:description" : "Philips Hue Bridge Driver",
+            "iot:help" : "Consult sample code for API"
+        },
+        {
+            "@id" : "iot-js:net",
+            "iot:name" : "net",
+            "iot:description" : "General Network",
+            "iot:help" : "Consult sample code for API"
+        },
+        {
+            "@id" : "iot-js:mqtt",
+            "iot:name" : "mqtt",
+            "iot:description" : "MQTT",
+            "iot:help" : "Consult sample code for API"
+        },
+        {
+            "@id" : "iot-js:firmata",
+            "iot:name" : "firmata",
+            "iot:description" : "Firmata protocol",
+            "iot:help" : "Consult sample code for API"
+        },
+        {
+            "@id" : "iot-js:json",
+            "iot:name" : "json",
+            "iot:description" : "Intenet JSON / REST Driver",
+            "iot:help" : "Consult sample code for API"
+        },
+        {
+            "@id" : "iot-js:upnp",
+            "iot:name" : "upnp",
+            "iot:description" : "Universal Plug & Play Driver",
+            "iot:help" : "Consult sample code for API"
+        },
+        {
+            "@id" : "iot-js:yun",
+            "iot:name" : "yun",
+            "iot:description" : "Talk to Arduino Yun",
+            "iot:help" : "Consult sample code for API"
+        }
+  ]
+}
