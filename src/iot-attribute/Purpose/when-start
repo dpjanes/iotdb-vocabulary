@@ -1,0 +1,5 @@
+description when to begin / start something
+format iot:date
+format iot:time
+format iot:datetime
+type iot:string

@@ -1,0 +1,2 @@
+cf iot:format
+description if a string, it must be a valid IRI

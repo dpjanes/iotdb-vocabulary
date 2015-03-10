@@ -1,0 +1,6 @@
+maximum 1
+description the power level to cook / prepare at
+minimum 0
+type iot:integer
+type iot:number
+help for toasters, microwaves

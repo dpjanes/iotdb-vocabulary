@@ -1,0 +1,4 @@
+description the length of a timer
+format iot:time
+format iot:timedelta
+type iot:string

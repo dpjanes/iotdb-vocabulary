@@ -1,0 +1,5 @@
+description something that can be open or closed
+minimum 0
+type iot:boolean
+type iot:integer
+maximum 1

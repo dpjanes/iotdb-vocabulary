@@ -1,0 +1,4 @@
+description change the channel one device increment
+minimum 1
+access-read False
+type iot:integer

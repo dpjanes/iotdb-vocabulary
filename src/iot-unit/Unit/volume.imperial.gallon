@@ -1,0 +1,3 @@
+conversion [volume.imperial.pint]*8
+conversion [volume.imperial.quart]*4
+conversion [volume.imperial.cord]/797.290609

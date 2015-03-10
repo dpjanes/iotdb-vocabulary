@@ -1,0 +1,2 @@
+type iot:string
+description Twitter message body; text email body

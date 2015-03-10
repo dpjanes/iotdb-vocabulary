@@ -1,0 +1,4 @@
+description change the brightness one device increment
+minimum -1
+type iot:integer
+maximum 1

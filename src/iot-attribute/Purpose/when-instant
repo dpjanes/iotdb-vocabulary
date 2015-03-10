@@ -1,0 +1,5 @@
+description a date and/or time
+format iot:date
+format iot:time
+format iot:datetime
+type iot:string

@@ -1,0 +1,3 @@
+rdfs:subClassOf schema:Thing
+description The @type for Attribute definitions. Attributes define how to manipulate Models/Things. Use iot:attribute to relate something to an iot:Attribute
+rdfs:isDefinedBy iot:Attribute

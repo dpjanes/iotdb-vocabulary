@@ -1,0 +1,5 @@
+description the valid JSON-like types for this value
+cf iot:boolean
+cf iot:integer
+cf iot:number
+cf iot:string

@@ -1,0 +1,5 @@
+description Something that can be true or false
+minimum 0
+type iot:boolean
+type iot:integer
+maximum 1

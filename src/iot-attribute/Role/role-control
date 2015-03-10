@@ -1,0 +1,3 @@
+description this attribute is a control, typically for an actuator
+cf iot:role
+help sending a control value is expected to make a change

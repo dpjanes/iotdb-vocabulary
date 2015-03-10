@@ -1,0 +1,2 @@
+description The @type for Place definitions. Places define a structured bundle of place related information. Use iot:place to relate something (typically a Thing) to an iot:Place
+rdfs:isDefinedBy iot:Place

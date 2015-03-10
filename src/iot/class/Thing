@@ -1,0 +1,2 @@
+description the @type for Thing definitions. A Thing is a specific instance of a Model.
+rdfs:isDefinedBy iot:Thing

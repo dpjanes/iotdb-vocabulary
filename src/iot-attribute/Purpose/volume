@@ -1,0 +1,5 @@
+description the volume
+minimum 0
+type iot:boolean
+type iot:integer
+maximum 1

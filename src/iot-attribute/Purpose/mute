@@ -1,0 +1,5 @@
+description mute or unmute a device
+minimum 0
+type iot:boolean
+type iot:integer
+maximum 1

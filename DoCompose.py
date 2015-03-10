@@ -17,7 +17,7 @@ import json
 import re
 
 SRC_FOLDER = "src/"
-DST_FOLDER = "."
+DST_FOLDER = "var/"
 TOP_NAMES = [
     "iot",
     "iot-attribute",
@@ -112,6 +112,11 @@ def top_loader(top_name):
             ds.append(filed)
 
     return ds
+
+try:
+    os.makedirs(DST_FOLDER)
+except:
+    pass
 
 d_types = set()
 for top_name in TOP_NAMES:
