@@ -134,7 +134,7 @@ for top_name in TOP_NAMES:
     jsonld = {
         "@id": "https://iotdb.org/pub/%s" % top_name,
         "@context": contextd,
-        "iot:associated" : ds
+        "iot:item" : ds
     }
 
     ## identify types
@@ -148,6 +148,14 @@ for top_name in TOP_NAMES:
         d_types.add(d_id)
 
     ## add to context (this makes NS URL values expand in JSON-LD)
+    for d_type in d_types:
+        d_url = "https://iotdb.org/pub/%s" % re.sub(":", "#", d_type)
+        d_key = re.sub("^.*:", "", d_type)
+        contextd[d_key] = {
+            "@type": "@id",
+            "@id": d_url,
+        }
+    """
     for d in ds:
         for key in d.iterkeys():
             if key not in d_types:
@@ -156,6 +164,7 @@ for top_name in TOP_NAMES:
             contextd[key] = {
                 "@type": "@id"
             }
+    """
 
 
     top_dst = os.path.join(DST_FOLDER, "%s.jsonld" % top_name)
