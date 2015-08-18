@@ -1,2 +1,2 @@
 type iot:number
-description prefer iot-attribute:sensor.temperature for detection
+description prefer iot-purpose:sensor.temperature for detection
