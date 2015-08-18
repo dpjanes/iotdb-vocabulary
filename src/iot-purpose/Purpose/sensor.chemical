@@ -1,2 +1,5 @@
+description sense the presence of a chemical
+help use iot:sense to indicate the particular chemical
+cf iot:sense
 type iot:number
 type iot:boolean

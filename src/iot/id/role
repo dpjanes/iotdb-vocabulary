@@ -1,4 +1,0 @@
-help typically iot:role-reading or iot:role-control
-description what role does this value play
-cf iot-attribute:role-control
-cf iot-attribute:role-reading
