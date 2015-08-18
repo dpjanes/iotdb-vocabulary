@@ -1,7 +1,7 @@
 description constrain strings to certain well-known fomats
-cf iot:color
-cf iot:date
-cf iot:time
-cf iot:datetime
-cf iot:timedelta
-cf iot:iri
+cf iot:format.color
+cf iot:format.date
+cf iot:format.time
+cf iot:format.datetime
+cf iot:format.timedelta
+cf iot:format.iri
