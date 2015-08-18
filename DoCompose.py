@@ -20,7 +20,7 @@ SRC_FOLDER = "src/"
 DST_FOLDER = "var/"
 TOP_NAMES = [
     "iot",
-    "iot-attribute",
+    "iot-purpose",
     "iot-facet",
     "iot-unit",
 ]
@@ -124,7 +124,7 @@ for top_name in TOP_NAMES:
         "schema": "https://schema.org/",
         "iot": "https://iotdb.org/pub/iot#",
         "iot-unit": "https://iotdb.org/pub/iot-unit#",
-        "iot-attribute": "https://iotdb.org/pub/iot-attribute#",
+        "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
         "iot-facet": "https://iotdb.org/pub/iot-facet#",
         "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",

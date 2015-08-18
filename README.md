@@ -9,7 +9,7 @@ offically published
 
 The most likely files you may wish to change are
 
-* iot-attribute.jsonld
+* iot-purpose.jsonld (was iot-attribute.jsonld)
 * iot-unit.jsonld
 * iot-facet.jsonld
 * iot-placement.jsonld
