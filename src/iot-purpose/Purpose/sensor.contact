@@ -1,1 +1,1 @@
-type iot:number
+type iot:type.number

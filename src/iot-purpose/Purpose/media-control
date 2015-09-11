@@ -9,4 +9,4 @@ enum fast-forward-2x
 enum fast-backward-2x
 enum fast-forward-3x
 enum fast-backward-3x
-type iot:string
+type iot:type.string

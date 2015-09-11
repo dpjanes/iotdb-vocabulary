@@ -1,2 +1,2 @@
-format iot:color
-type iot:string
+format iot:format.color
+type iot:type.string

@@ -1,4 +1,4 @@
-type iot:string
-type iot:integer
-type iot:number
+type iot:type.string
+type iot:type.integer
+type iot:type.number
 description A command to do an action. The argument should be recently unique

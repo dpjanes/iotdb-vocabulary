@@ -1,4 +1,4 @@
 description is something wet
 help use iot:sensor.chemical / wikipedia:Water only for more technical purposes
-type iot:number
-type iot:boolean
+type iot:type.number
+type iot:type.boolean
