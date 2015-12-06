@@ -104,7 +104,11 @@ def top_loader(top_name):
             filed = file_loader(open(file_path))
             filed["@type"] = type_type
             filed["@id"] = "https://iotdb.org/pub/%s#%s" % ( top_name, file_name )
-            filed.setdefault("schema:name", re.sub("^.*[.]", "", file_name))
+
+            if top_name in [ "iot" ]:
+                filed.setdefault("schema:name", file_name)
+            else:
+                filed.setdefault("schema:name", re.sub("^.*[.]", "", file_name))
 
             if type_type == "rdfs:Class":
                 filed["rdfs:isDefinedBy"] = 'iot:' + file_name
@@ -169,4 +173,5 @@ for top_name in TOP_NAMES:
 
     top_dst = os.path.join(DST_FOLDER, "%s.jsonld" % top_name)
     with open(top_dst, 'w') as tout:
+        print >> sys.stderr, "wrote: %s.jsonld" % top_name
         print >> tout, json.dumps(jsonld, sort_keys=True, indent=2)
