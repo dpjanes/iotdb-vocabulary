@@ -154,7 +154,7 @@ for top_name in TOP_NAMES:
     ## add to context (this makes NS URL values expand in JSON-LD)
     for d_type in d_types:
         d_url = "https://iotdb.org/pub/%s" % re.sub(":", "#", d_type)
-        d_key = re.sub("^.*:", "", d_type)
+        d_key = d_type ## re.sub("^.*:", "", d_type)
         contextd[d_key] = {
             "@type": "@id",
             "@id": d_url,
