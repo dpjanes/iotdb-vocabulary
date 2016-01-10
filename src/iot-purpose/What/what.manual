@@ -1,0 +1,3 @@
+description a manually operated alarm, switch, &c
+type iot:type.number
+type iot:type.boolean

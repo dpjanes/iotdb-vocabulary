@@ -1,0 +1,2 @@
+type iot:type.integer
+unit iot-unit:math.frequency.bpm
