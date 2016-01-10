@@ -1,0 +1,4 @@
+description it is / is it connected
+help NB. things can be reachable without being connected
+type iot:type.boolean
+type iot:type.integer
