@@ -20,7 +20,7 @@
     "url": "https://github.com/dpjanes/iotdb-vocabulary"
   },
   "scripts": {
-    "publish": "python bin/Publish.py"
+    "publish": "npm version patch -m 'new release'; python bin/Publish.py"
   },
   "version": "0.1.1"
 }
