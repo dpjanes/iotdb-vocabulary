@@ -1,0 +1,449 @@
+{
+  "@context": {
+    "iot": "https://iotdb.org/pub/iot#", 
+    "iot-facet": "https://iotdb.org/pub/iot-facet#", 
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#", 
+    "iot-unit": "https://iotdb.org/pub/iot-unit#", 
+    "iot:attribute": {
+      "@id": "https://iotdb.org/pub/iot#attribute", 
+      "@type": "@id"
+    }, 
+    "iot:cf": {
+      "@id": "https://iotdb.org/pub/iot#cf", 
+      "@type": "@id"
+    }, 
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet", 
+      "@type": "@id"
+    }, 
+    "iot:format": {
+      "@id": "https://iotdb.org/pub/iot#format", 
+      "@type": "@id"
+    }, 
+    "iot:item": {
+      "@id": "https://iotdb.org/pub/iot#item", 
+      "@type": "@id"
+    }, 
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose", 
+      "@type": "@id"
+    }, 
+    "iot:sense": {
+      "@id": "https://iotdb.org/pub/iot#sense", 
+      "@type": "@id"
+    }, 
+    "iot:thing": {
+      "@id": "https://iotdb.org/pub/iot#thing", 
+      "@type": "@id"
+    }, 
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type", 
+      "@type": "@id"
+    }, 
+    "iot:unit": {
+      "@id": "https://iotdb.org/pub/iot#unit", 
+      "@type": "@id"
+    }, 
+    "iot:vector": {
+      "@id": "https://iotdb.org/pub/iot#vector", 
+      "@type": "@id"
+    }, 
+    "iot:what": {
+      "@id": "https://iotdb.org/pub/iot#what", 
+      "@type": "@id"
+    }, 
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+    "schema": "https://schema.org/", 
+    "xs": "http://www.w3.org/2001/XMLSchema/#"
+  }, 
+  "@id": "https://iotdb.org/pub/iot", 
+  "iot:item": [
+    {
+      "@id": "https://iotdb.org/pub/iot#istate", 
+      "@type": "iot:Band", 
+      "schema:description": "the associated istate band for a Thing", 
+      "schema:name": "istate"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#meta", 
+      "@type": "iot:Band", 
+      "schema:description": "the associated meta band for a Thing", 
+      "schema:name": "meta"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#model", 
+      "@type": "iot:Band", 
+      "schema:description": "the associated model band (iot:Model) for a Thing", 
+      "schema:name": "model"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#ostate", 
+      "@type": "iot:Band", 
+      "schema:description": "the associated ostate band for a Thing", 
+      "schema:name": "ostate"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#actuator", 
+      "@type": "xs:boolean", 
+      "schema:description": "this is an actuator, it changes something", 
+      "schema:name": "actuator"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#read", 
+      "@type": "xs:boolean", 
+      "schema:description": "there is a value to read", 
+      "schema:name": "read"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#sensor", 
+      "@type": "xs:boolean", 
+      "schema:description": "this is a sensor, it detects changes in the environment", 
+      "schema:name": "sensor"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#write", 
+      "@type": "xs:boolean", 
+      "schema:description": "you can write a value", 
+      "schema:name": "write"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Attribute", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Attribute", 
+      "rdfs:subClassOf": "schema:Thing", 
+      "schema:description": "The @type for Attribute definitions. Attributes define how to manipulate Models/Things. Use iot:attribute to relate something to an iot:Attribute", 
+      "schema:name": "Attribute"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Band", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Band", 
+      "schema:description": "data object associated with Thing", 
+      "schema:name": "Band"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Constraint", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Constraint", 
+      "schema:name": "Constraint"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Facet", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Facet", 
+      "schema:description": "the functional purpose of a thing", 
+      "schema:name": "Facet"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Format", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Format", 
+      "schema:description": "what the data looks like", 
+      "schema:name": "Format"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Model", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Model", 
+      "schema:description": "the @type for Models definitions. Models are the", 
+      "schema:name": "Model"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Place", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Place", 
+      "schema:description": "The @type for Place definitions. Places define a structured bundle of place related information. Use iot:place to relate something (typically a Thing) to an iot:Place", 
+      "schema:name": "Place"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Purpose", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Purpose", 
+      "schema:description": "defines the semantic purpose of this attribute", 
+      "schema:name": "Purpose"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Role", 
+      "@type": "rdfs:Class", 
+      "iot:help": "this is likely to be deleted", 
+      "rdfs:isDefinedBy": "iot:Role", 
+      "schema:name": "Role"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Thing", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Thing", 
+      "schema:description": "the @type for Thing definitions. A Thing is a specific instance of a Model.", 
+      "schema:name": "Thing"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Type", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Type", 
+      "schema:description": "the JSON type of values", 
+      "schema:name": "Type"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Unit", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Unit", 
+      "schema:description": "the Unit of measure the value uses", 
+      "schema:name": "Unit"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#What", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:What", 
+      "schema:description": "what is being measured", 
+      "schema:name": "What"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#maximum", 
+      "@type": "iot:Constraint", 
+      "iot:help": "typically values greater are set to this", 
+      "schema:description": "if a number or integer, the maximum value", 
+      "schema:name": "maximum"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#minimum", 
+      "@type": "iot:Constraint", 
+      "iot:help": "typically values less are set to this", 
+      "schema:description": "if a number or integer, the minimum value", 
+      "schema:name": "minimum"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#validator", 
+      "@type": "iot:Constraint", 
+      "schema:description": "A JavaScript function to validate this function", 
+      "schema:name": "validator"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#arithmetic-precision", 
+      "@type": "xs:decimal", 
+      "schema:description": "the arithmetic precision of a value, i.e. valid digits past the decimal place", 
+      "schema:name": "arithmetic-precision"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#format.color", 
+      "@type": "iot:Format", 
+      "iot:cf": "iot:format", 
+      "iot:help": "either hex #RRGGBB, rgb(0-1,0-1,0-1) or hsl(0-1,0-1,0-1)", 
+      "schema:description": "if a string, this must be a color", 
+      "schema:name": "format.color"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#format.date", 
+      "@type": "iot:Format", 
+      "iot:cf": "iot:format", 
+      "schema:description": "if a string, this must be an ISO date", 
+      "schema:name": "format.date"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#format.datetime", 
+      "@type": "iot:Format", 
+      "schema:description": "if a string, this must be an ISO datetime", 
+      "schema:name": "format.datetime"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#format.iri", 
+      "@type": "iot:Format", 
+      "iot:cf": "iot:format", 
+      "schema:description": "if a string, it must be a valid IRI", 
+      "schema:name": "format.iri"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#format.time", 
+      "@type": "iot:Format", 
+      "iot:cf": "iot:format", 
+      "schema:description": "if a string, this must be an ISO time", 
+      "schema:name": "format.time"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#format.timedelta", 
+      "@type": "iot:Format", 
+      "iot:cf": "iot:format", 
+      "iot:help": "if a string, this must be an ISO datetime", 
+      "schema:name": "format.timedelta"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#attribute", 
+      "@type": "@id", 
+      "iot:@container": "@list", 
+      "schema:description": "relate something (typically an iot:Model) to an iot:attribute", 
+      "schema:name": "attribute"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#cf", 
+      "@type": "@id", 
+      "schema:description": "see also, as an example or a place this is used", 
+      "schema:name": "cf"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#facet", 
+      "@type": "@id", 
+      "iot:help": "see iot-facet:* for common values", 
+      "schema:description": "what semantic purpose does Thing serve", 
+      "schema:name": "facet"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#format", 
+      "@type": "@id", 
+      "iot:cf": [
+        "iot:format.color", 
+        "iot:format.date", 
+        "iot:format.time", 
+        "iot:format.datetime", 
+        "iot:format.timedelta", 
+        "iot:format.iri"
+      ], 
+      "schema:description": "constrain strings to certain well-known fomats", 
+      "schema:name": "format"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#item", 
+      "@type": "@id", 
+      "schema:description": "bundle related stuff together, basically a JSON-LD hack", 
+      "schema:name": "item"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#purpose", 
+      "@type": "@id", 
+      "iot:help": "see iot-purpose:* for common values", 
+      "schema:description": "what semantic purpose does this iot:Attribute serve", 
+      "schema:name": "purpose"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#sense", 
+      "@type": "@id", 
+      "iot:cf": "https://en.wikipedia.org/wiki/Dictionary_of_chemical_formulas", 
+      "iot:help": "use Wikipedia links if possible, e.g wikipedia:Ethanol", 
+      "schema:description": "what is being sensed", 
+      "schema:name": "sense"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#thing", 
+      "@type": "@id", 
+      "schema:name": "thing"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#type", 
+      "@type": "@id", 
+      "iot:cf": [
+        "iot:type.null", 
+        "iot:type.boolean", 
+        "iot:type.integer", 
+        "iot:type.number", 
+        "iot:type.string", 
+        "iot:type.set", 
+        "iot:type.list"
+      ], 
+      "schema:description": "the valid JSON-like types for this value", 
+      "schema:name": "type"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#unit", 
+      "@type": "@id", 
+      "iot:help": "see iot-unit:* for common values", 
+      "schema:description": "the measurement-type units used", 
+      "schema:name": "unit"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#vector", 
+      "@type": "@id", 
+      "iot:help": "Attributes with the same vector value should be considered part of a vector", 
+      "schema:description": "Vector key", 
+      "schema:name": "vector"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#what", 
+      "@type": "@id", 
+      "schema:description": "what is being measured", 
+      "schema:name": "what"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#enumeration", 
+      "@type": "xs:string", 
+      "schema:description": "valid values", 
+      "schema:name": "enumeration"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#examples", 
+      "@type": "xs:string", 
+      "schema:description": "examples of how this may be used", 
+      "schema:name": "examples"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#help", 
+      "@type": "xs:string", 
+      "schema:description": "additional help for this item", 
+      "schema:name": "help"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#model-id", 
+      "@type": "xs:string", 
+      "schema:name": "model-id"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#thing-id", 
+      "@type": "xs:string", 
+      "schema:name": "thing-id"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#uuid", 
+      "@type": "xs:string", 
+      "schema:description": "a UUID for whatever this is", 
+      "schema:name": "uuid"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#type.boolean", 
+      "@type": "iot:Type", 
+      "iot:cf": "iot:type", 
+      "schema:description": "this may be a boolean", 
+      "schema:name": "type.boolean"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#type.integer", 
+      "@type": "iot:Type", 
+      "iot:cf": "iot:type", 
+      "schema:description": "this may be an integer", 
+      "schema:name": "type.integer"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#type.list", 
+      "@type": "iot:Type", 
+      "iot:cf": "iot:type", 
+      "schema:description": "combine with other types as needed", 
+      "schema:name": "type.list"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#type.null", 
+      "@type": "iot:Type", 
+      "iot:cf": "iot:type", 
+      "schema:description": "this does not take a value / the value is ignored", 
+      "schema:name": "type.null"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#type.number", 
+      "@type": "iot:Type", 
+      "iot:cf": "iot:type", 
+      "schema:description": "this may be a number", 
+      "schema:name": "type.number"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#type.set", 
+      "@type": "iot:Type", 
+      "iot:cf": "iot:type", 
+      "schema:description": "combine with other types as needed", 
+      "schema:name": "type.set"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#type.string", 
+      "@type": "iot:Type", 
+      "iot:cf": "iot:type", 
+      "iot:help": "this can be further constrained by iot:format and iot:enumeration", 
+      "schema:description": "this value may be a string", 
+      "schema:name": "type.string"
+    }
+  ]
+}

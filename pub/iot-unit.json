@@ -1,0 +1,574 @@
+{
+  "@context": {
+    "iot": "https://iotdb.org/pub/iot#", 
+    "iot-facet": "https://iotdb.org/pub/iot-facet#", 
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#", 
+    "iot-unit": "https://iotdb.org/pub/iot-unit#", 
+    "iot:attribute": {
+      "@id": "https://iotdb.org/pub/iot#attribute", 
+      "@type": "@id"
+    }, 
+    "iot:cf": {
+      "@id": "https://iotdb.org/pub/iot#cf", 
+      "@type": "@id"
+    }, 
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet", 
+      "@type": "@id"
+    }, 
+    "iot:format": {
+      "@id": "https://iotdb.org/pub/iot#format", 
+      "@type": "@id"
+    }, 
+    "iot:item": {
+      "@id": "https://iotdb.org/pub/iot#item", 
+      "@type": "@id"
+    }, 
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose", 
+      "@type": "@id"
+    }, 
+    "iot:sense": {
+      "@id": "https://iotdb.org/pub/iot#sense", 
+      "@type": "@id"
+    }, 
+    "iot:thing": {
+      "@id": "https://iotdb.org/pub/iot#thing", 
+      "@type": "@id"
+    }, 
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type", 
+      "@type": "@id"
+    }, 
+    "iot:unit": {
+      "@id": "https://iotdb.org/pub/iot#unit", 
+      "@type": "@id"
+    }, 
+    "iot:vector": {
+      "@id": "https://iotdb.org/pub/iot#vector", 
+      "@type": "@id"
+    }, 
+    "iot:what": {
+      "@id": "https://iotdb.org/pub/iot#what", 
+      "@type": "@id"
+    }, 
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+    "schema": "https://schema.org/", 
+    "xs": "http://www.w3.org/2001/XMLSchema/#"
+  }, 
+  "@id": "https://iotdb.org/pub/iot-unit", 
+  "iot:item": [
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#area.imperial.circular-mil", 
+      "@type": "iot:Unit", 
+      "schema:name": "circular-mil"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#area.imperial.foot^2", 
+      "@type": "iot:Unit", 
+      "schema:name": "foot^2"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#area.imperial.inch^2", 
+      "@type": "iot:Unit", 
+      "schema:name": "inch^2"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#area.imperial.yard^2", 
+      "@type": "iot:Unit", 
+      "schema:name": "yard^2"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#area.us.acre", 
+      "@type": "iot:Unit", 
+      "schema:name": "acre"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#energy.si.coulomb", 
+      "@type": "iot:Unit", 
+      "schema:name": "coulomb"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#energy.si.electronvolt", 
+      "@type": "iot:Unit", 
+      "schema:name": "electronvolt"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#energy.si.henry", 
+      "@type": "iot:Unit", 
+      "schema:name": "henry"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#energy.si.joule", 
+      "@type": "iot:Unit", 
+      "schema:name": "joule"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#energy.si.newton", 
+      "@type": "iot:Unit", 
+      "schema:name": "newton"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#energy.si.watt", 
+      "@type": "iot:Unit", 
+      "schema:name": "watt"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#energy.traditional.electrical-horsepower", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[energy.si.watt]/746", 
+      "schema:name": "electrical-horsepower"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#energy.traditional.mechanical-horsepower", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[energy.si.watt]/745.69", 
+      "schema:name": "mechanical-horsepower"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.constant.light-year", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "9460730472580800*[length.si.meter]", 
+      "schema:name": "light-year"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.imperial.foot", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[length.imperial.inch]*12", 
+      "schema:name": "foot"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.imperial.inch", 
+      "@type": "iot:Unit", 
+      "schema:name": "inch"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.imperial.mil", 
+      "@type": "iot:Unit", 
+      "schema:name": "mil"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.imperial.mile", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[length.imperial.foot]*5280", 
+      "schema:name": "mile"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.imperial.nautical-mile", 
+      "@type": "iot:Unit", 
+      "schema:name": "nautical-mile"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.imperial.yard", 
+      "@type": "iot:Unit", 
+      "schema:name": "yard"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.si.astronomic-unit", 
+      "@type": "iot:Unit", 
+      "schema:name": "astronomic-unit"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.si.kilometre", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[length.si.meter]*1000", 
+      "schema:name": "kilometre"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.si.metre", 
+      "@type": "iot:Unit", 
+      "schema:name": "metre"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.si.parsec", 
+      "@type": "iot:Unit", 
+      "schema:name": "parsec"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.us.fathom", 
+      "@type": "iot:Unit", 
+      "schema:name": "fathom"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.us.furlong", 
+      "@type": "iot:Unit", 
+      "schema:name": "furlong"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.us.mile", 
+      "@type": "iot:Unit", 
+      "schema:name": "mile"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#length.us.rod", 
+      "@type": "iot:Unit", 
+      "schema:name": "rod"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#light.si.candela", 
+      "@type": "iot:Unit", 
+      "schema:name": "candela"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#light.si.lumen", 
+      "@type": "iot:Unit", 
+      "schema:name": "lumen"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#light.si.lux", 
+      "@type": "iot:Unit", 
+      "schema:name": "lux"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.constant.dalton", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "1.66053892173e-27*[mass.si.kilogram]", 
+      "schema:name": "dalton"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.constant.electron-mass", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "9.10938291e-31*[mass.si.kilogram]", 
+      "schema:name": "electron-mass"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.constant.proton-mass", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "1.67262178e-27*[mass.si.kilogram]", 
+      "schema:name": "proton-mass"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.imperial.dram", 
+      "@type": "iot:Unit", 
+      "schema:name": "dram"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.imperial.grain", 
+      "@type": "iot:Unit", 
+      "schema:name": "grain"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.imperial.long-ton", 
+      "@type": "iot:Unit", 
+      "schema:name": "long-ton"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.imperial.ounce", 
+      "@type": "iot:Unit", 
+      "schema:name": "ounce"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.imperial.pound", 
+      "@type": "iot:Unit", 
+      "schema:name": "pound"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.imperial.stone", 
+      "@type": "iot:Unit", 
+      "schema:name": "stone"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.imperial.ton", 
+      "@type": "iot:Unit", 
+      "schema:name": "ton"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.si.gram", 
+      "@type": "iot:Unit", 
+      "schema:name": "gram"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.si.kilogram", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[mass.si.gram]*1000", 
+      "schema:name": "kilogram"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.si.tonne", 
+      "@type": "iot:Unit", 
+      "schema:name": "tonne"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.troy.ounce", 
+      "@type": "iot:Unit", 
+      "schema:name": "ounce"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#mass.troy.pound", 
+      "@type": "iot:Unit", 
+      "schema:name": "pound"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.angle.degree", 
+      "@type": "iot:Unit", 
+      "schema:name": "degree"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.angle.minute", 
+      "@type": "iot:Unit", 
+      "schema:name": "minute"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.angle.radian", 
+      "@type": "iot:Unit", 
+      "schema:name": "radian"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.angle.second", 
+      "@type": "iot:Unit", 
+      "schema:name": "second"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.e", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "2.718281828459045", 
+      "schema:name": "e"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.pi", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "3.14159265359", 
+      "schema:name": "pi"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.fraction.parts-per-billion", 
+      "@type": "iot:Unit", 
+      "schema:name": "parts-per-billion"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.fraction.parts-per-million", 
+      "@type": "iot:Unit", 
+      "schema:name": "parts-per-million"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.fraction.parts-per-thousand", 
+      "@type": "iot:Unit", 
+      "schema:name": "parts-per-thousand"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.fraction.parts-per-trillion", 
+      "@type": "iot:Unit", 
+      "schema:name": "parts-per-trillion"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.fraction.percent", 
+      "@type": "iot:Unit", 
+      "schema:name": "percent"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.fraction.unit", 
+      "@type": "iot:Unit", 
+      "schema:name": "unit"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.si.hertz", 
+      "@type": "iot:Unit", 
+      "schema:name": "hertz"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#pressure.constant.atmosphere", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "101325*[pressure.si.pascal]", 
+      "schema:name": "atmosphere"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#pressure.si.bar", 
+      "@type": "iot:Unit", 
+      "schema:name": "bar"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#pressure.si.pascal", 
+      "@type": "iot:Unit", 
+      "schema:name": "pascal"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#pressure.traditional.inch-of-mercury", 
+      "@type": "iot:Unit", 
+      "schema:name": "inch-of-mercury"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#pressure.traditional.meter-of-mercury", 
+      "@type": "iot:Unit", 
+      "schema:name": "meter-of-mercury"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#pressure.traditional.pounds-per-in^2", 
+      "@type": "iot:Unit", 
+      "schema:name": "pounds-per-in^2"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#radioactivity.si.becquerel", 
+      "@type": "iot:Unit", 
+      "schema:name": "becquerel"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.constant.standard-acceleration-of-free-fall", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "9.80665*[speed.si.meter-per-second^2]", 
+      "schema:name": "standard-acceleration-of-free-fall"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.constant.velocity-of-light", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "299792458*[speed.si.meter-per-second]", 
+      "schema:name": "velocity-of-light"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.imperial.knot", 
+      "@type": "iot:Unit", 
+      "schema:name": "knot"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.imperial.mile-per-hour", 
+      "@type": "iot:Unit", 
+      "schema:name": "mile-per-hour"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.si.kilometre-per-hour", 
+      "@type": "iot:Unit", 
+      "schema:name": "kilometre-per-hour"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.si.metre-per-second", 
+      "@type": "iot:Unit", 
+      "schema:name": "metre-per-second"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.si.metre-per-second^2", 
+      "@type": "iot:Unit", 
+      "schema:name": "metre-per-second^2"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#temperature.imperial.fahrenheit", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[temperature.si.celsius]*9/5+32", 
+      "schema:name": "fahrenheit"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#temperature.si.celsius", 
+      "@type": "iot:Unit", 
+      "iot:conversion": [
+        "[temperature.si.kelvin]-272.15", 
+        "([temperature.imperial.fahrenheit]-32)/5*9"
+      ], 
+      "schema:name": "celsius"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#temperature.si.kelvin", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[temperature.si.celsius]+272.15", 
+      "schema:name": "kelvin"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#temperature.si.mired", 
+      "@type": "iot:Unit", 
+      "iot:cf": "https://en.wikipedia.org/wiki/Mired", 
+      "schema:description": "reciprocal megakelvin", 
+      "schema:name": "mired"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#time.si.day", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[time.si.hour]*24", 
+      "schema:name": "day"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#time.si.hour", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[time.si.minute]*60", 
+      "schema:name": "hour"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#time.si.minute", 
+      "@type": "iot:Unit", 
+      "iot:conversion": "[time.si.second]*60", 
+      "schema:name": "minute"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#time.si.month", 
+      "@type": "iot:Unit", 
+      "schema:name": "month"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#time.si.second", 
+      "@type": "iot:Unit", 
+      "schema:name": "second"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#time.si.year", 
+      "@type": "iot:Unit", 
+      "schema:name": "year"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.imperial.cord", 
+      "@type": "iot:Unit", 
+      "schema:name": "cord"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.imperial.cubic-inch", 
+      "@type": "iot:Unit", 
+      "schema:name": "cubic-inch"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.imperial.cubic-yard", 
+      "@type": "iot:Unit", 
+      "schema:name": "cubic-yard"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.imperial.fluid-ounce", 
+      "@type": "iot:Unit", 
+      "schema:name": "fluid-ounce"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.imperial.gallon", 
+      "@type": "iot:Unit", 
+      "iot:conversion": [
+        "[volume.imperial.pint]*8", 
+        "[volume.imperial.quart]*4", 
+        "[volume.imperial.cord]/797.290609"
+      ], 
+      "schema:name": "gallon"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.imperial.pint", 
+      "@type": "iot:Unit", 
+      "schema:name": "pint"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.imperial.quart", 
+      "@type": "iot:Unit", 
+      "schema:name": "quart"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.si.litre", 
+      "@type": "iot:Unit", 
+      "schema:name": "litre"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.us.cup", 
+      "@type": "iot:Unit", 
+      "schema:name": "cup"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.us.gallon", 
+      "@type": "iot:Unit", 
+      "schema:name": "gallon"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.us.quart", 
+      "@type": "iot:Unit", 
+      "schema:name": "quart"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.us.tablespoon", 
+      "@type": "iot:Unit", 
+      "schema:name": "tablespoon"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#volume.us.teaspoon", 
+      "@type": "iot:Unit", 
+      "schema:name": "teaspoon"
+    }
+  ]
+}

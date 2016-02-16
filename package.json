@@ -1,0 +1,28 @@
+{
+    "author": "David P. Janes <davidjanes@iotdb.org> (https://iotdb.org)", 
+    "bugs": {
+        "url": "https://github.com/dpjanes/iotdb-vocabulary/issues"
+    }, 
+    "dependencies": {
+    }, 
+    "description": "IOTDB.org", 
+    "devDependencies": {
+    }, 
+    "homepage": "https://iotdb.org", 
+    "keywords": [
+        "Semantic Web", 
+        "IOT", 
+        "IOTDB", 
+        "Linked Data"
+    ], 
+    "license": "GPL-3.0", 
+    "name": "iotdb-vocabuary", 
+    "repository": {
+        "type": "git", 
+        "url": "https://github.com/dpjanes/iotdb-vocabulary"
+    }, 
+    "scripts": {
+        "cover": "python bin/Publish.py"
+    }, 
+    "version": "0.1.0"
+}

@@ -1,0 +1,399 @@
+{
+  "@context": {
+    "iot": "https://iotdb.org/pub/iot#", 
+    "iot-facet": "https://iotdb.org/pub/iot-facet#", 
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#", 
+    "iot-unit": "https://iotdb.org/pub/iot-unit#", 
+    "iot:attribute": {
+      "@id": "https://iotdb.org/pub/iot#attribute", 
+      "@type": "@id"
+    }, 
+    "iot:cf": {
+      "@id": "https://iotdb.org/pub/iot#cf", 
+      "@type": "@id"
+    }, 
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet", 
+      "@type": "@id"
+    }, 
+    "iot:format": {
+      "@id": "https://iotdb.org/pub/iot#format", 
+      "@type": "@id"
+    }, 
+    "iot:item": {
+      "@id": "https://iotdb.org/pub/iot#item", 
+      "@type": "@id"
+    }, 
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose", 
+      "@type": "@id"
+    }, 
+    "iot:sense": {
+      "@id": "https://iotdb.org/pub/iot#sense", 
+      "@type": "@id"
+    }, 
+    "iot:thing": {
+      "@id": "https://iotdb.org/pub/iot#thing", 
+      "@type": "@id"
+    }, 
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type", 
+      "@type": "@id"
+    }, 
+    "iot:unit": {
+      "@id": "https://iotdb.org/pub/iot#unit", 
+      "@type": "@id"
+    }, 
+    "iot:vector": {
+      "@id": "https://iotdb.org/pub/iot#vector", 
+      "@type": "@id"
+    }, 
+    "iot:what": {
+      "@id": "https://iotdb.org/pub/iot#what", 
+      "@type": "@id"
+    }, 
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+    "schema": "https://schema.org/", 
+    "xs": "http://www.w3.org/2001/XMLSchema/#"
+  }, 
+  "@id": "https://iotdb.org/pub/iot-facet", 
+  "iot:item": [
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance", 
+      "@type": "iot:Facet", 
+      "iot:example": "a TV, a stove, a toaster", 
+      "schema:description": "consumer appliance", 
+      "schema:name": "appliance"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance.coffee-maker", 
+      "@type": "iot:Facet", 
+      "schema:name": "coffee-maker"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance.kettle", 
+      "@type": "iot:Facet", 
+      "schema:name": "kettle"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance.microwave", 
+      "@type": "iot:Facet", 
+      "schema:name": "microwave"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance.oven", 
+      "@type": "iot:Facet", 
+      "schema:name": "oven"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance.refrigerator", 
+      "@type": "iot:Facet", 
+      "schema:name": "refrigerator"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance.stove", 
+      "@type": "iot:Facet", 
+      "schema:name": "stove"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance.toaster", 
+      "@type": "iot:Facet", 
+      "schema:name": "toaster"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#appliance.vacuum", 
+      "@type": "iot:Facet", 
+      "schema:name": "vacuum"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#climate", 
+      "@type": "iot:Facet", 
+      "schema:description": "climate control", 
+      "schema:name": "climate"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#climate.control", 
+      "@type": "iot:Facet", 
+      "schema:name": "control"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#climate.cooling", 
+      "@type": "iot:Facet", 
+      "schema:name": "cooling"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#climate.heating", 
+      "@type": "iot:Facet", 
+      "schema:name": "heating"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#fixture", 
+      "@type": "iot:Facet", 
+      "iot:example": "doors, windows", 
+      "schema:name": "fixture"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#fixture.door", 
+      "@type": "iot:Facet", 
+      "schema:name": "door"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#fixture.window", 
+      "@type": "iot:Facet", 
+      "schema:name": "window"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#gateway", 
+      "@type": "iot:Facet", 
+      "schema:name": "gateway"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#io", 
+      "@type": "iot:Facet", 
+      "schema:description": "Human input control", 
+      "schema:name": "io"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#io.keyboard", 
+      "@type": "iot:Facet", 
+      "schema:name": "keyboard"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#io.keypad", 
+      "@type": "iot:Facet", 
+      "schema:description": "something less than a full keyboard", 
+      "schema:name": "keypad"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#io.monitor", 
+      "@type": "iot:Facet", 
+      "schema:name": "monitor"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#io.mouse", 
+      "@type": "iot:Facet", 
+      "schema:name": "mouse"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#lighting", 
+      "@type": "iot:Facet", 
+      "iot:example": "Philips Hue, TCP Lighting, LIFX", 
+      "schema:name": "lighting"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#lighting.control", 
+      "@type": "iot:Facet", 
+      "schema:name": "control"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#lighting.light", 
+      "@type": "iot:Facet", 
+      "schema:name": "light"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media", 
+      "@type": "iot:Facet", 
+      "iot:example": "doors, windows", 
+      "schema:name": "media"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.player", 
+      "@type": "iot:Facet", 
+      "schema:name": "player"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.player.blu-ray", 
+      "@type": "iot:Facet", 
+      "schema:name": "blu-ray"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.player.cd", 
+      "@type": "iot:Facet", 
+      "schema:name": "cd"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.player.dvd", 
+      "@type": "iot:Facet", 
+      "schema:name": "dvd"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.player.turntable", 
+      "@type": "iot:Facet", 
+      "schema:name": "turntable"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.radio", 
+      "@type": "iot:Facet", 
+      "schema:name": "radio"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.radio.am", 
+      "@type": "iot:Facet", 
+      "schema:name": "am"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.radio.fm", 
+      "@type": "iot:Facet", 
+      "schema:name": "fm"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.radio.internet", 
+      "@type": "iot:Facet", 
+      "schema:name": "internet"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.receiver", 
+      "@type": "iot:Facet", 
+      "schema:name": "receiver"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#media.tv", 
+      "@type": "iot:Facet", 
+      "schema:name": "tv"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#power", 
+      "@type": "iot:Facet", 
+      "schema:name": "power"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#power.battery", 
+      "@type": "iot:Facet", 
+      "schema:name": "battery"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#power.mains", 
+      "@type": "iot:Facet", 
+      "schema:name": "mains"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#power.solar", 
+      "@type": "iot:Facet", 
+      "schema:name": "solar"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#security", 
+      "@type": "iot:Facet", 
+      "schema:description": "part of a security system", 
+      "schema:name": "security"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#security.alarm", 
+      "@type": "iot:Facet", 
+      "schema:name": "alarm"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#security.control", 
+      "@type": "iot:Facet", 
+      "schema:name": "control"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor", 
+      "@type": "iot:Facet", 
+      "schema:name": "sensor"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.chemical", 
+      "@type": "iot:Facet", 
+      "iot:cf": "iot:sense", 
+      "schema:description": "use iot:sense on attributes to show what is being sensed", 
+      "schema:name": "chemical"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.fire", 
+      "@type": "iot:Facet", 
+      "schema:name": "fire"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.heat", 
+      "@type": "iot:Facet", 
+      "schema:name": "heat"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.humidity", 
+      "@type": "iot:Facet", 
+      "schema:name": "humidity"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.motion", 
+      "@type": "iot:Facet", 
+      "schema:name": "motion"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.particulates", 
+      "@type": "iot:Facet", 
+      "schema:name": "particulates"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.presence", 
+      "@type": "iot:Facet", 
+      "schema:name": "presence"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.shatter", 
+      "@type": "iot:Facet", 
+      "schema:name": "shatter"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.smoke", 
+      "@type": "iot:Facet", 
+      "schema:name": "smoke"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.sound", 
+      "@type": "iot:Facet", 
+      "schema:name": "sound"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.spatial", 
+      "@type": "iot:Facet", 
+      "schema:description": "x/y/z accelerometers, compass, heading, etc.", 
+      "schema:name": "spatial"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.temperature", 
+      "@type": "iot:Facet", 
+      "schema:name": "temperature"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.water", 
+      "@type": "iot:Facet", 
+      "schema:name": "water"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#toy", 
+      "@type": "iot:Facet", 
+      "iot:example": "a model train, a quadcopter", 
+      "schema:description": "something that can be played with", 
+      "schema:name": "toy"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#wearable", 
+      "@type": "iot:Facet", 
+      "iot:example": "heartrate monitor, smart watch", 
+      "schema:description": "a wearable / personal area network device", 
+      "schema:name": "wearable"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#wearable.glasses", 
+      "@type": "iot:Facet", 
+      "schema:name": "glasses"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#wearable.heart-rate", 
+      "@type": "iot:Facet", 
+      "schema:name": "heart-rate"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#wearable.respiration", 
+      "@type": "iot:Facet", 
+      "schema:name": "respiration"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#wearable.watch", 
+      "@type": "iot:Facet", 
+      "schema:name": "watch"
+    }
+  ]
+}

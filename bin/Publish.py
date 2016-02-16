@@ -17,7 +17,7 @@ import json
 import re
 
 SRC_FOLDER = "src/"
-DST_FOLDER = "var/"
+DST_FOLDER = "pub/"
 TOP_NAMES = [
     "iot",
     "iot-purpose",
@@ -171,7 +171,7 @@ for top_name in TOP_NAMES:
     """
 
 
-    top_dst = os.path.join(DST_FOLDER, "%s.jsonld" % top_name)
+    top_dst = os.path.join(DST_FOLDER, "%s.json" % top_name)
     with open(top_dst, 'w') as tout:
-        print >> sys.stderr, "wrote: %s.jsonld" % top_name
+        print >> sys.stderr, "wrote: %s.json" % top_name
         print >> tout, json.dumps(jsonld, sort_keys=True, indent=2)

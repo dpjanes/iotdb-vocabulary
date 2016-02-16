@@ -1,0 +1,1232 @@
+{
+  "@context": {
+    "iot": "https://iotdb.org/pub/iot#", 
+    "iot-facet": "https://iotdb.org/pub/iot-facet#", 
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#", 
+    "iot-unit": "https://iotdb.org/pub/iot-unit#", 
+    "iot:attribute": {
+      "@id": "https://iotdb.org/pub/iot#attribute", 
+      "@type": "@id"
+    }, 
+    "iot:cf": {
+      "@id": "https://iotdb.org/pub/iot#cf", 
+      "@type": "@id"
+    }, 
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet", 
+      "@type": "@id"
+    }, 
+    "iot:format": {
+      "@id": "https://iotdb.org/pub/iot#format", 
+      "@type": "@id"
+    }, 
+    "iot:item": {
+      "@id": "https://iotdb.org/pub/iot#item", 
+      "@type": "@id"
+    }, 
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose", 
+      "@type": "@id"
+    }, 
+    "iot:sense": {
+      "@id": "https://iotdb.org/pub/iot#sense", 
+      "@type": "@id"
+    }, 
+    "iot:thing": {
+      "@id": "https://iotdb.org/pub/iot#thing", 
+      "@type": "@id"
+    }, 
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type", 
+      "@type": "@id"
+    }, 
+    "iot:unit": {
+      "@id": "https://iotdb.org/pub/iot#unit", 
+      "@type": "@id"
+    }, 
+    "iot:vector": {
+      "@id": "https://iotdb.org/pub/iot#vector", 
+      "@type": "@id"
+    }, 
+    "iot:what": {
+      "@id": "https://iotdb.org/pub/iot#what", 
+      "@type": "@id"
+    }, 
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+    "schema": "https://schema.org/", 
+    "xs": "http://www.w3.org/2001/XMLSchema/#"
+  }, 
+  "@id": "https://iotdb.org/pub/iot-purpose", 
+  "iot:item": [
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.antenna", 
+      "@type": "iot:Band", 
+      "schema:name": "antenna"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.aux", 
+      "@type": "iot:Band", 
+      "schema:name": "aux"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.av", 
+      "@type": "iot:Band", 
+      "schema:name": "av"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.bluray", 
+      "@type": "iot:Band", 
+      "schema:name": "bluray"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.browser", 
+      "@type": "iot:Band", 
+      "schema:name": "browser"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.cable", 
+      "@type": "iot:Band", 
+      "schema:name": "cable"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.camera", 
+      "@type": "iot:Band", 
+      "schema:name": "camera"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.cd", 
+      "@type": "iot:Band", 
+      "schema:name": "cd"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.component", 
+      "@type": "iot:Band", 
+      "schema:name": "component"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.dvd", 
+      "@type": "iot:Band", 
+      "schema:name": "dvd"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.dvi", 
+      "@type": "iot:Band", 
+      "schema:name": "dvi"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.dvr", 
+      "@type": "iot:Band", 
+      "schema:name": "dvr"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.game", 
+      "@type": "iot:Band", 
+      "schema:name": "game"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.hdmi", 
+      "@type": "iot:Band", 
+      "schema:name": "hdmi"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.ieee", 
+      "@type": "iot:Band", 
+      "schema:name": "ieee"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.info.guide", 
+      "@type": "iot:Band", 
+      "schema:name": "guide"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.info.notifications", 
+      "@type": "iot:Band", 
+      "schema:name": "notifications"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.input.tv", 
+      "@type": "iot:Band", 
+      "schema:name": "tv"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.pc", 
+      "@type": "iot:Band", 
+      "schema:name": "pc"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.phono", 
+      "@type": "iot:Band", 
+      "schema:name": "phono"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.radio.hd", 
+      "@type": "iot:Band", 
+      "schema:name": "hd"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.radio.internet", 
+      "@type": "iot:Band", 
+      "schema:name": "internet"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.radio.tuner", 
+      "@type": "iot:Band", 
+      "schema:name": "tuner"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.rgb", 
+      "@type": "iot:Band", 
+      "schema:name": "rgb"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.s-video", 
+      "@type": "iot:Band", 
+      "schema:name": "s-video"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.satellite", 
+      "@type": "iot:Band", 
+      "schema:name": "satellite"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.anyplace-tv", 
+      "@type": "iot:Band", 
+      "schema:name": "anyplace-tv"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.cinemanow", 
+      "@type": "iot:Band", 
+      "schema:name": "cinemanow"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.crackle", 
+      "@type": "iot:Band", 
+      "schema:name": "crackle"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.flickr", 
+      "@type": "iot:Band", 
+      "schema:name": "flickr"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.lastfm", 
+      "@type": "iot:Band", 
+      "schema:name": "lastfm"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.miracast", 
+      "@type": "iot:Band", 
+      "schema:name": "miracast"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.napster", 
+      "@type": "iot:Band", 
+      "schema:name": "napster"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.netflix", 
+      "@type": "iot:Band", 
+      "schema:name": "netflix"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.pandora", 
+      "@type": "iot:Band", 
+      "schema:name": "pandora"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.rhapsody", 
+      "@type": "iot:Band", 
+      "schema:name": "rhapsody"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.smartshare", 
+      "@type": "iot:Band", 
+      "schema:name": "smartshare"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.service.youtube", 
+      "@type": "iot:Band", 
+      "schema:name": "youtube"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.tv", 
+      "@type": "iot:Band", 
+      "schema:name": "tv"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.usb", 
+      "@type": "iot:Band", 
+      "schema:name": "usb"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.vendor.dock", 
+      "@type": "iot:Band", 
+      "schema:name": "dock"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.vendor.favorites", 
+      "@type": "iot:Band", 
+      "schema:name": "favorites"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.vendor.ipod", 
+      "@type": "iot:Band", 
+      "schema:name": "ipod"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.vendor.media-player", 
+      "@type": "iot:Band", 
+      "schema:name": "media-player"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.vga", 
+      "@type": "iot:Band", 
+      "schema:name": "vga"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band.video", 
+      "@type": "iot:Band", 
+      "schema:name": "video"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#actuator", 
+      "@type": "iot:Purpose", 
+      "iot:help": "combine with 'iot:what', strongly prefer something else from iot-purpose:*", 
+      "schema:description": "generic actuator", 
+      "schema:name": "actuator"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#alarm", 
+      "@type": "iot:Purpose", 
+      "iot:help": "combine with 'iot:what'", 
+      "schema:description": "an alarm", 
+      "schema:name": "alarm"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#altitude", 
+      "@type": "iot:Purpose", 
+      "iot:cf": [
+        "iot-purpose:latitude", 
+        "iot-purpose:longitude"
+      ], 
+      "schema:description": "altitude (as in height above ground)", 
+      "schema:name": "altitude"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#angle", 
+      "@type": "iot:Purpose", 
+      "schema:description": "Angle, plane angle for circular purpose systems", 
+      "schema:name": "angle"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#band", 
+      "@type": "iot:Purpose", 
+      "iot:help": "AM, FM, HTML1, Video 1", 
+      "iot:type": "iot:type.string", 
+      "schema:description": "the band to tune to", 
+      "schema:name": "band"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#battery", 
+      "@type": "iot:Purpose", 
+      "schema:name": "battery"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#brightness", 
+      "@type": "iot:Purpose", 
+      "iot:maximum": 1, 
+      "iot:minimum": 0, 
+      "iot:type": "iot:type.number", 
+      "schema:description": "the brightness", 
+      "schema:name": "brightness"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#brightness.delta", 
+      "@type": "iot:Purpose", 
+      "iot:maximum": 1, 
+      "iot:minimum": -1, 
+      "iot:type": "iot:type.integer", 
+      "schema:description": "change the brightness one device increment", 
+      "schema:name": "delta"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#brightness.down", 
+      "@type": "iot:Purpose", 
+      "schema:name": "down"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#brightness.up", 
+      "@type": "iot:Purpose", 
+      "schema:name": "up"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#channel", 
+      "@type": "iot:Purpose", 
+      "iot:minimum": 1, 
+      "iot:type": "iot:type.integer", 
+      "schema:description": "the channel", 
+      "schema:name": "channel"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#channel.delta", 
+      "@type": "iot:Purpose", 
+      "iot:minimum": 1, 
+      "iot:read": "False", 
+      "iot:type": "iot:type.integer", 
+      "schema:description": "change the channel one device increment", 
+      "schema:name": "delta"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#channel.down", 
+      "@type": "iot:Purpose", 
+      "schema:name": "down"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#channel.return", 
+      "@type": "iot:Purpose", 
+      "schema:name": "return"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#channel.up", 
+      "@type": "iot:Purpose", 
+      "schema:name": "up"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#chemical", 
+      "@type": "iot:Purpose", 
+      "iot:help": "use iot:what to indicate the particular chemical", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "sense the presence of a chemical", 
+      "schema:name": "chemical"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color", 
+      "@type": "iot:Purpose", 
+      "iot:format": "iot:format.color", 
+      "iot:type": "iot:type.string", 
+      "schema:name": "color"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.cie.x", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:CIE_1931_color_space", 
+      "schema:name": "x"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.cie.y", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:CIE_1931_color_space", 
+      "schema:name": "y"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.cie.z", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:CIE_1931_color_space", 
+      "schema:name": "z"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.hsb.brightness", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:HSL_and_HSV", 
+      "schema:name": "brightness"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.hsb.hue", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:HSL_and_HSV", 
+      "schema:name": "hue"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.hsb.saturation", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:HSL_and_HSV", 
+      "schema:name": "saturation"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.hsl.hue", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:HSL_and_HSV", 
+      "schema:name": "hue"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.hsl.lightness", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:HSL_and_HSV", 
+      "schema:name": "lightness"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.hsl.saturation", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:HSL_and_HSV", 
+      "schema:name": "saturation"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.rgb.b", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:RGB_color_model", 
+      "schema:name": "b"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.rgb.g", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:RGB_color_model", 
+      "schema:name": "g"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.rgb.r", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:RGB_color_model", 
+      "schema:name": "r"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#color.temperature", 
+      "@type": "iot:Purpose", 
+      "iot:cf": "wikipedia:Color_temperature", 
+      "schema:name": "temperature"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#command", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.string", 
+        "iot:type.integer", 
+        "iot:type.number"
+      ], 
+      "schema:description": "A command to do an action. The argument should be recently unique", 
+      "schema:name": "command"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#connected", 
+      "@type": "iot:Purpose", 
+      "iot:help": "NB. things can be reachable without being connected", 
+      "iot:type": [
+        "iot:type.boolean", 
+        "iot:type.integer"
+      ], 
+      "schema:description": "it is / is it connected", 
+      "schema:name": "connected"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#cursor.down", 
+      "@type": "iot:Purpose", 
+      "schema:name": "down"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#cursor.enter", 
+      "@type": "iot:Purpose", 
+      "schema:name": "enter"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#cursor.leave", 
+      "@type": "iot:Purpose", 
+      "schema:name": "leave"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#cursor.left", 
+      "@type": "iot:Purpose", 
+      "schema:name": "left"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#cursor.right", 
+      "@type": "iot:Purpose", 
+      "schema:name": "right"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#cursor.up", 
+      "@type": "iot:Purpose", 
+      "schema:name": "up"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#duration", 
+      "@type": "iot:Purpose", 
+      "iot:format": [
+        "iot:format.time", 
+        "iot:format.timedelta"
+      ], 
+      "iot:type": "iot:type.string", 
+      "schema:description": "a duration of time", 
+      "schema:name": "duration"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#flag", 
+      "@type": "iot:Purpose", 
+      "iot:maximum": 1, 
+      "iot:minimum": 0, 
+      "iot:type": [
+        "iot:type.boolean", 
+        "iot:type.integer"
+      ], 
+      "schema:description": "Something that can be true or false", 
+      "schema:name": "flag"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#flag.false", 
+      "@type": "iot:Purpose", 
+      "schema:description": "it is false", 
+      "schema:name": "false"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#flag.toggle", 
+      "@type": "iot:Purpose", 
+      "iot:help": "a pizza topping switch", 
+      "iot:read": "False", 
+      "schema:description": "flip from true to false or visa versa (prefer something specific)", 
+      "schema:name": "toggle"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#flag.true", 
+      "@type": "iot:Purpose", 
+      "schema:description": "it is true", 
+      "schema:name": "true"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#frequency", 
+      "@type": "iot:Purpose", 
+      "schema:name": "frequency"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#intensity", 
+      "@type": "iot:Purpose", 
+      "iot:help": "for toasters, microwaves", 
+      "iot:maximum": 1, 
+      "iot:minimum": 0, 
+      "iot:type": [
+        "iot:type.integer", 
+        "iot:type.number"
+      ], 
+      "schema:description": "the power level to cook / prepare at", 
+      "schema:name": "intensity"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#latitude", 
+      "@type": "iot:Purpose", 
+      "iot:cf": [
+        "iot-purpose:longitude", 
+        "iot-purpose:elevation"
+      ], 
+      "schema:name": "latitude"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#longitude", 
+      "@type": "iot:Purpose", 
+      "iot:cf": [
+        "iot-purpose:latitude", 
+        "iot-purpose:elevation"
+      ], 
+      "schema:name": "longitude"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#media-control", 
+      "@type": "iot:Purpose", 
+      "iot:enum": [
+        "play", 
+        "stop", 
+        "pause", 
+        "next", 
+        "previous", 
+        "fast-forward", 
+        "fast-backward", 
+        "fast-forward-2x", 
+        "fast-backward-2x", 
+        "fast-forward-3x", 
+        "fast-backward-3x"
+      ], 
+      "iot:type": "iot:type.string", 
+      "schema:name": "media-control"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#message.html", 
+      "@type": "iot:Purpose", 
+      "iot:type": "iot:type.string", 
+      "schema:description": "HTML message body", 
+      "schema:name": "html"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#message.text", 
+      "@type": "iot:Purpose", 
+      "iot:type": "iot:type.string", 
+      "schema:description": "Twitter message body; text email body", 
+      "schema:name": "text"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#message.title", 
+      "@type": "iot:Purpose", 
+      "iot:type": "iot:type.string", 
+      "schema:description": "Message title, email subject", 
+      "schema:name": "title"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#motion", 
+      "@type": "iot:Purpose", 
+      "schema:name": "motion"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#mute", 
+      "@type": "iot:Purpose", 
+      "iot:maximum": 1, 
+      "iot:minimum": 0, 
+      "iot:type": [
+        "iot:type.boolean", 
+        "iot:type.integer"
+      ], 
+      "schema:description": "mute or unmute a device", 
+      "schema:name": "mute"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#mute.false", 
+      "@type": "iot:Purpose", 
+      "schema:description": "unmute it", 
+      "schema:name": "false"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#mute.toggle", 
+      "@type": "iot:Purpose", 
+      "iot:read": "False", 
+      "schema:description": "flip from unmuted to muted, or visa versa", 
+      "schema:name": "toggle"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#mute.true", 
+      "@type": "iot:Purpose", 
+      "schema:description": "mute it", 
+      "schema:name": "true"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#on", 
+      "@type": "iot:Purpose", 
+      "iot:maximum": 1, 
+      "iot:minimum": 0, 
+      "iot:type": [
+        "iot:type.boolean", 
+        "iot:type.integer"
+      ], 
+      "schema:description": "something that can be on or off", 
+      "schema:name": "on"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#on.false", 
+      "@type": "iot:Purpose", 
+      "schema:description": "turn it off", 
+      "schema:name": "false"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#on.toggle", 
+      "@type": "iot:Purpose", 
+      "iot:read": "False", 
+      "schema:description": "flip from on to off, or visa-versa", 
+      "schema:name": "toggle"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#on.true", 
+      "@type": "iot:Purpose", 
+      "schema:description": "turn it on", 
+      "schema:name": "true"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#open", 
+      "@type": "iot:Purpose", 
+      "iot:maximum": 1, 
+      "iot:minimum": 0, 
+      "iot:type": [
+        "iot:type.boolean", 
+        "iot:type.integer"
+      ], 
+      "schema:description": "something that can be open or closed", 
+      "schema:name": "open"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#open.false", 
+      "@type": "iot:Purpose", 
+      "schema:description": "close it", 
+      "schema:name": "false"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#open.toggle", 
+      "@type": "iot:Purpose", 
+      "iot:read": "False", 
+      "schema:description": "flip from open to closed, or visa-versa", 
+      "schema:name": "toggle"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#open.true", 
+      "@type": "iot:Purpose", 
+      "schema:description": "open it", 
+      "schema:name": "true"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane", 
+      "@type": "iot:Purpose", 
+      "schema:name": "plane"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane.azimuth", 
+      "@type": "iot:Purpose", 
+      "schema:name": "azimuth"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane.elevation", 
+      "@type": "iot:Purpose", 
+      "schema:description": "angle of elevation", 
+      "schema:name": "elevation"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane.pitch", 
+      "@type": "iot:Purpose", 
+      "schema:description": "Angle of rotation along the Y axis", 
+      "schema:name": "pitch"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane.roll", 
+      "@type": "iot:Purpose", 
+      "schema:description": "Angle of rotation along the X axis", 
+      "schema:name": "roll"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane.x", 
+      "@type": "iot:Purpose", 
+      "schema:description": "Magnitude along the X axis", 
+      "schema:name": "x"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane.y", 
+      "@type": "iot:Purpose", 
+      "schema:description": "Magnitude along the Y axis", 
+      "schema:name": "y"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane.yaw", 
+      "@type": "iot:Purpose", 
+      "schema:description": "Angle of rotation along the Z axis", 
+      "schema:name": "yaw"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#plane.z", 
+      "@type": "iot:Purpose", 
+      "schema:description": "Magnitude along the Z axis", 
+      "schema:name": "z"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#presence", 
+      "@type": "iot:Purpose", 
+      "schema:name": "presence"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#radius", 
+      "@type": "iot:Purpose", 
+      "schema:description": "Radius, e.g. for circular or spherical purpose systems", 
+      "schema:name": "radius"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#sensor", 
+      "@type": "iot:Purpose", 
+      "iot:help": "combine with 'iot:what'", 
+      "schema:description": "generic sensor", 
+      "schema:name": "sensor"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#shuttle.backward", 
+      "@type": "iot:Purpose", 
+      "schema:name": "backward"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#shuttle.forward", 
+      "@type": "iot:Purpose", 
+      "schema:name": "forward"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#shuttle.next", 
+      "@type": "iot:Purpose", 
+      "schema:name": "next"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#shuttle.pause", 
+      "@type": "iot:Purpose", 
+      "schema:name": "pause"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#shuttle.play", 
+      "@type": "iot:Purpose", 
+      "schema:name": "play"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#shuttle.previous", 
+      "@type": "iot:Purpose", 
+      "schema:name": "previous"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#shuttle.stop", 
+      "@type": "iot:Purpose", 
+      "schema:name": "stop"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#temperature", 
+      "@type": "iot:Purpose", 
+      "iot:type": "iot:type.number", 
+      "schema:description": "prefer iot-purpose:sensor.temperature for detection", 
+      "schema:name": "temperature"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#tray.close", 
+      "@type": "iot:Purpose", 
+      "schema:name": "close"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#tray.open", 
+      "@type": "iot:Purpose", 
+      "schema:name": "open"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#tray.toggle", 
+      "@type": "iot:Purpose", 
+      "schema:name": "toggle"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#value", 
+      "@type": "iot:Purpose", 
+      "schema:description": "This attribute is a value of no particular purpose", 
+      "schema:name": "value"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#volume", 
+      "@type": "iot:Purpose", 
+      "iot:maximum": 1, 
+      "iot:minimum": 0, 
+      "iot:type": [
+        "iot:type.boolean", 
+        "iot:type.integer"
+      ], 
+      "schema:description": "the volume", 
+      "schema:name": "volume"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#volume-delta", 
+      "@type": "iot:Purpose", 
+      "iot:minimum": 1, 
+      "iot:read": "False", 
+      "iot:type": "iot:type.integer", 
+      "schema:description": "change the volume one device increment", 
+      "schema:name": "volume-delta"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#when-end", 
+      "@type": "iot:Purpose", 
+      "iot:format": [
+        "iot:format.date", 
+        "iot:format.time", 
+        "iot:format.datetime"
+      ], 
+      "iot:type": "iot:type.string", 
+      "schema:description": "when to end / finish something", 
+      "schema:name": "when-end"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#when-instant", 
+      "@type": "iot:Purpose", 
+      "iot:format": [
+        "iot:format.date", 
+        "iot:format.time", 
+        "iot:format.datetime"
+      ], 
+      "iot:type": "iot:type.string", 
+      "schema:description": "a date and/or time", 
+      "schema:name": "when-instant"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#when-start", 
+      "@type": "iot:Purpose", 
+      "iot:format": [
+        "iot:format.date", 
+        "iot:format.time", 
+        "iot:format.datetime"
+      ], 
+      "iot:type": "iot:type.string", 
+      "schema:description": "when to begin / start something", 
+      "schema:name": "when-start"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#chemical.C2H5OH", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "ethyl alcohol", 
+      "schema:name": "C2H5OH"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#chemical.C3H8", 
+      "@type": "iot:What", 
+      "schema:description": "propane", 
+      "schema:name": "C3H8"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#chemical.CH3OH", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "ethyl alcohol", 
+      "schema:name": "CH3OH"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#chemical.CH4", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "methane", 
+      "schema:name": "CH4"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#chemical.CO", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "carbon monoxide", 
+      "schema:name": "CO"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#chemical.CO2", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "carbon dioxide", 
+      "schema:name": "CO2"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#chemical.H2", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "hydrogen", 
+      "schema:name": "H2"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.alcohol", 
+      "@type": "iot:What", 
+      "iot:help": "e.g. for breathalyzers", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "alcohol"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.cold", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "cold"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.contact", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "contact switch", 
+      "schema:name": "contact"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.current", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "current"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.energy", 
+      "@type": "iot:What", 
+      "schema:name": "energy"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.energy.expended", 
+      "@type": "iot:What", 
+      "schema:name": "expended"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.fire", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "fire"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.heart-rate", 
+      "@type": "iot:What", 
+      "iot:type": "iot:type.integer", 
+      "iot:unit": "iot-unit:math.frequency.bpm", 
+      "schema:name": "heart-rate"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.heat", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "heat"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.humidity", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "humidity"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.lpg", 
+      "@type": "iot:What", 
+      "schema:description": "liquified petrolium gas", 
+      "schema:name": "lpg"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.manual", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "a manually operated alarm, switch, &c", 
+      "schema:name": "manual"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.moisture", 
+      "@type": "iot:What", 
+      "iot:help": "use iot:sensor.chemical / wikipedia:Water only for more technical purposes", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "is something wet", 
+      "schema:name": "moisture"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.motion", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "motion"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.particulates", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "particulates"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.power", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "power"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.presence", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "presence"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.shatter", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "shatter"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.smoke", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "smoke"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.sound", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "sound"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.temperature", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "temperature"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime", 
+      "@type": "iot:What", 
+      "schema:name": "uptime"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime.day", 
+      "@type": "iot:What", 
+      "schema:name": "day"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime.hour", 
+      "@type": "iot:What", 
+      "schema:name": "hour"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime.month", 
+      "@type": "iot:What", 
+      "schema:name": "month"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime.year", 
+      "@type": "iot:What", 
+      "schema:name": "year"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#what.voltage", 
+      "@type": "iot:What", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "voltage"
+    }
+  ]
+}

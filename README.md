@@ -4,15 +4,7 @@
 This is the iotdb.org vocabulary for describing Things -
 Sensors and Actuators - in the Internet of Things.
 
-If you make changes, push them back to us. They are 
-offically published 
-
-The most likely files you may wish to change are
-
-* iot-purpose.jsonld (was iot-attribute.jsonld)
-* iot-unit.jsonld
-* iot-facet.jsonld
-* iot-placement.jsonld
+If you make changes, push them back to us. 
 
 ## Schema.org
 
@@ -28,6 +20,8 @@ from [Thing](http://schema.org/Thing). Specifically
 * url
 
 ## Structure
+
+### src
 
 The source files are in "src". The hierarchical structure of 
 the folders is:
@@ -50,7 +44,18 @@ e.g.
 the <code>schema:name</code>, <code>@type</code> and <code>@id</code>
 are automatically made by the DoCompose function.
 
-The program <code>DoCompose.py</code> converts
+### pub
+
+The "published" JSON-LD files are folder `pub`. Note that
+the **official** URL home for these is 
+[https://iotdb.org/pub](https://iotdb.org/pub), not the GitHub
+folder.
+
+To generate the JSON-LD files from the source files, run:
+
+	npm run publish
+
+The program <code>bin/DoCompose.py</code> converts
 the files in <code>src</code> to JSON-LD in this 
 directory.
 
@@ -119,19 +124,3 @@ Important:
 * try not add SI multiplier units (e.g. centigram) unless
 they're very commonly used. Exponents can be added
 to values if this is needed.
-* add conversions
-
-### Conversions
-
-Conversions are rules about how to convert _other_ units
-to this one. For example, <code>temperature.si.celsius</code>
-has the following conversions in it:
-
-    conversion [temperature.si.kelvin]-272.15
-    conversion ([temperature.imperial.fahrenheit]-32)/5*9
-
-The format should be fairly obvious.
-
-Add conversions to at least one other unit in the system
-if at all possible. Assume the system will know how to
-chain conversions, so don't get carried away.
