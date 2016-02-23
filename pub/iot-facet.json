@@ -306,6 +306,16 @@
       "schema:name": "fire"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.flow", 
+      "@type": "iot:Facet", 
+      "schema:name": "flow"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.force", 
+      "@type": "iot:Facet", 
+      "schema:name": "force"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-facet#sensor.heat", 
       "@type": "iot:Facet", 
       "schema:name": "heat"
@@ -326,9 +336,19 @@
       "schema:name": "particulates"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.position", 
+      "@type": "iot:Facet", 
+      "schema:name": "position"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-facet#sensor.presence", 
       "@type": "iot:Facet", 
       "schema:name": "presence"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-facet#sensor.pressure", 
+      "@type": "iot:Facet", 
+      "schema:name": "pressure"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-facet#sensor.shatter", 
