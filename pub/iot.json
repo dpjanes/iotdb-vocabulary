@@ -129,6 +129,13 @@
       "schema:name": "Constraint"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot#Effect", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Effect", 
+      "schema:description": "an effect to be added to another attribute", 
+      "schema:name": "Effect"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot#Facet", 
       "@type": "rdfs:Class", 
       "rdfs:isDefinedBy": "iot:Facet", 

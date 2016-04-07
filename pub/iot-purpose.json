@@ -290,6 +290,34 @@
       "schema:name": "video"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#blink", 
+      "@type": "iot:Effect", 
+      "iot:help": "note lights must be on, argument typically time period", 
+      "schema:description": "make lights blink", 
+      "schema:name": "blink"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#fade", 
+      "@type": "iot:Effect", 
+      "iot:help": "typically a time period", 
+      "schema:description": "make lights fade in and out", 
+      "schema:name": "fade"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#fade.in", 
+      "@type": "iot:Effect", 
+      "iot:help": "typically a time period", 
+      "schema:description": "make lights fade in", 
+      "schema:name": "in"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#fade.out", 
+      "@type": "iot:Effect", 
+      "iot:help": "typically a time period", 
+      "schema:description": "make lights fade out", 
+      "schema:name": "out"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#actuator", 
       "@type": "iot:Purpose", 
       "iot:help": "combine with 'iot:what', strongly prefer something else from iot-purpose:*", 
@@ -323,7 +351,6 @@
       "@id": "https://iotdb.org/pub/iot-purpose#band", 
       "@type": "iot:Purpose", 
       "iot:help": "AM, FM, HTML1, Video 1", 
-      "iot:type": "iot:type.string", 
       "schema:description": "the band to tune to", 
       "schema:name": "band"
     }, 
@@ -335,18 +362,12 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#brightness", 
       "@type": "iot:Purpose", 
-      "iot:maximum": 1, 
-      "iot:minimum": 0, 
-      "iot:type": "iot:type.number", 
       "schema:description": "the brightness", 
       "schema:name": "brightness"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#brightness.delta", 
       "@type": "iot:Purpose", 
-      "iot:maximum": 1, 
-      "iot:minimum": -1, 
-      "iot:type": "iot:type.integer", 
       "schema:description": "change the brightness one device increment", 
       "schema:name": "delta"
     }, 
@@ -363,17 +384,13 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#channel", 
       "@type": "iot:Purpose", 
-      "iot:minimum": 1, 
-      "iot:type": "iot:type.integer", 
       "schema:description": "the channel", 
       "schema:name": "channel"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#channel.delta", 
       "@type": "iot:Purpose", 
-      "iot:minimum": 1, 
       "iot:read": "False", 
-      "iot:type": "iot:type.integer", 
       "schema:description": "change the channel one device increment", 
       "schema:name": "delta"
     }, 
@@ -396,18 +413,12 @@
       "@id": "https://iotdb.org/pub/iot-purpose#chemical", 
       "@type": "iot:Purpose", 
       "iot:help": "use iot:what to indicate the particular chemical", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
       "schema:description": "sense the presence of a chemical", 
       "schema:name": "chemical"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#color", 
       "@type": "iot:Purpose", 
-      "iot:format": "iot:format.color", 
-      "iot:type": "iot:type.string", 
       "schema:name": "color"
     }, 
     {
@@ -491,11 +502,6 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#command", 
       "@type": "iot:Purpose", 
-      "iot:type": [
-        "iot:type.string", 
-        "iot:type.integer", 
-        "iot:type.number"
-      ], 
       "schema:description": "A command to do an action. The argument should be recently unique", 
       "schema:name": "command"
     }, 
@@ -503,10 +509,6 @@
       "@id": "https://iotdb.org/pub/iot-purpose#connected", 
       "@type": "iot:Purpose", 
       "iot:help": "NB. things can be reachable without being connected", 
-      "iot:type": [
-        "iot:type.boolean", 
-        "iot:type.integer"
-      ], 
       "schema:description": "it is / is it connected", 
       "schema:name": "connected"
     }, 
@@ -543,23 +545,12 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#duration", 
       "@type": "iot:Purpose", 
-      "iot:format": [
-        "iot:format.time", 
-        "iot:format.timedelta"
-      ], 
-      "iot:type": "iot:type.string", 
       "schema:description": "a duration of time", 
       "schema:name": "duration"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#flag", 
       "@type": "iot:Purpose", 
-      "iot:maximum": 1, 
-      "iot:minimum": 0, 
-      "iot:type": [
-        "iot:type.boolean", 
-        "iot:type.integer"
-      ], 
       "schema:description": "Something that can be true or false", 
       "schema:name": "flag"
     }, 
@@ -592,12 +583,6 @@
       "@id": "https://iotdb.org/pub/iot-purpose#intensity", 
       "@type": "iot:Purpose", 
       "iot:help": "for toasters, microwaves", 
-      "iot:maximum": 1, 
-      "iot:minimum": 0, 
-      "iot:type": [
-        "iot:type.integer", 
-        "iot:type.number"
-      ], 
       "schema:description": "the power level to cook / prepare at", 
       "schema:name": "intensity"
     }, 
@@ -622,40 +607,23 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#media-control", 
       "@type": "iot:Purpose", 
-      "iot:enum": [
-        "play", 
-        "stop", 
-        "pause", 
-        "next", 
-        "previous", 
-        "fast-forward", 
-        "fast-backward", 
-        "fast-forward-2x", 
-        "fast-backward-2x", 
-        "fast-forward-3x", 
-        "fast-backward-3x"
-      ], 
-      "iot:type": "iot:type.string", 
       "schema:name": "media-control"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#message.html", 
       "@type": "iot:Purpose", 
-      "iot:type": "iot:type.string", 
       "schema:description": "HTML message body", 
       "schema:name": "html"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#message.text", 
       "@type": "iot:Purpose", 
-      "iot:type": "iot:type.string", 
       "schema:description": "Twitter message body; text email body", 
       "schema:name": "text"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#message.title", 
       "@type": "iot:Purpose", 
-      "iot:type": "iot:type.string", 
       "schema:description": "Message title, email subject", 
       "schema:name": "title"
     }, 
@@ -667,12 +635,6 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#mute", 
       "@type": "iot:Purpose", 
-      "iot:maximum": 1, 
-      "iot:minimum": 0, 
-      "iot:type": [
-        "iot:type.boolean", 
-        "iot:type.integer"
-      ], 
       "schema:description": "mute or unmute a device", 
       "schema:name": "mute"
     }, 
@@ -698,12 +660,6 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#on", 
       "@type": "iot:Purpose", 
-      "iot:maximum": 1, 
-      "iot:minimum": 0, 
-      "iot:type": [
-        "iot:type.boolean", 
-        "iot:type.integer"
-      ], 
       "schema:description": "something that can be on or off", 
       "schema:name": "on"
     }, 
@@ -729,12 +685,6 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#open", 
       "@type": "iot:Purpose", 
-      "iot:maximum": 1, 
-      "iot:minimum": 0, 
-      "iot:type": [
-        "iot:type.boolean", 
-        "iot:type.integer"
-      ], 
       "schema:description": "something that can be open or closed", 
       "schema:name": "open"
     }, 
@@ -865,7 +815,6 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#temperature", 
       "@type": "iot:Purpose", 
-      "iot:type": "iot:type.number", 
       "schema:description": "prefer iot-purpose:sensor.temperature for detection", 
       "schema:name": "temperature"
     }, 
@@ -893,57 +842,31 @@
     {
       "@id": "https://iotdb.org/pub/iot-purpose#volume", 
       "@type": "iot:Purpose", 
-      "iot:maximum": 1, 
-      "iot:minimum": 0, 
-      "iot:type": [
-        "iot:type.boolean", 
-        "iot:type.integer"
-      ], 
       "schema:description": "the volume", 
       "schema:name": "volume"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#volume-delta", 
       "@type": "iot:Purpose", 
-      "iot:minimum": 1, 
       "iot:read": "False", 
-      "iot:type": "iot:type.integer", 
       "schema:description": "change the volume one device increment", 
       "schema:name": "volume-delta"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#when-end", 
       "@type": "iot:Purpose", 
-      "iot:format": [
-        "iot:format.date", 
-        "iot:format.time", 
-        "iot:format.datetime"
-      ], 
-      "iot:type": "iot:type.string", 
       "schema:description": "when to end / finish something", 
       "schema:name": "when-end"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#when-instant", 
       "@type": "iot:Purpose", 
-      "iot:format": [
-        "iot:format.date", 
-        "iot:format.time", 
-        "iot:format.datetime"
-      ], 
-      "iot:type": "iot:type.string", 
       "schema:description": "a date and/or time", 
       "schema:name": "when-instant"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#when-start", 
       "@type": "iot:Purpose", 
-      "iot:format": [
-        "iot:format.date", 
-        "iot:format.time", 
-        "iot:format.datetime"
-      ], 
-      "iot:type": "iot:type.string", 
       "schema:description": "when to begin / start something", 
       "schema:name": "when-start"
     }, 
