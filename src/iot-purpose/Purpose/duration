@@ -1,4 +1,4 @@
 description a duration of time
-format iot:format.time
-format iot:format.timedelta
-type iot:type.string
+## format iot:format.time
+## format iot:format.timedelta
+## type iot:type.string

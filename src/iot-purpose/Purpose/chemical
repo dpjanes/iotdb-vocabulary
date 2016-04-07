@@ -1,4 +1,4 @@
 description sense the presence of a chemical
 help use iot:what to indicate the particular chemical
-type iot:type.number
-type iot:type.boolean
+## type iot:type.number
+## type iot:type.boolean

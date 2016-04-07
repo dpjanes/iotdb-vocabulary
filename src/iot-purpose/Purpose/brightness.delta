@@ -1,4 +1,4 @@
 description change the brightness one device increment
-minimum -1
-type iot:type.integer
-maximum 1
+## minimum -1
+## type iot:type.integer
+## maximum 1

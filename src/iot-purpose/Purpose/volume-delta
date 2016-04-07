@@ -1,4 +1,4 @@
 description change the volume one device increment
-minimum 1
+## minimum 1
 read False
-type iot:type.integer
+## type iot:type.integer

@@ -1,4 +1,4 @@
 description the brightness
-minimum 0
-type iot:type.number
-maximum 1
+## minimum 0
+## type iot:type.number
+## maximum 1

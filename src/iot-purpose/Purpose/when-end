@@ -1,5 +1,5 @@
 description when to end / finish something
-format iot:format.date
-format iot:format.time
-format iot:format.datetime
-type iot:type.string
+## format iot:format.date
+## format iot:format.time
+## format iot:format.datetime
+## type iot:type.string

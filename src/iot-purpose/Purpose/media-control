@@ -1,12 +1,12 @@
-enum play
-enum stop
-enum pause
-enum next
-enum previous
-enum fast-forward
-enum fast-backward
-enum fast-forward-2x
-enum fast-backward-2x
-enum fast-forward-3x
-enum fast-backward-3x
-type iot:type.string
+## enum play
+## enum stop
+## enum pause
+## enum next
+## enum previous
+## enum fast-forward
+## enum fast-backward
+## enum fast-forward-2x
+## enum fast-backward-2x
+## enum fast-forward-3x
+## enum fast-backward-3x
+## type iot:type.string

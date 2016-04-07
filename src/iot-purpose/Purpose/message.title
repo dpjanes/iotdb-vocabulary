@@ -1,2 +1,2 @@
-type iot:type.string
+## type iot:type.string
 description Message title, email subject
