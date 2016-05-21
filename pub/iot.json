@@ -28,6 +28,14 @@
       "@id": "https://iotdb.org/pub/iot#purpose", 
       "@type": "@id"
     }, 
+    "iot:qualifier": {
+      "@id": "https://iotdb.org/pub/iot#qualifier", 
+      "@type": "@id"
+    }, 
+    "iot:qualifier-period": {
+      "@id": "https://iotdb.org/pub/iot#qualifier-period", 
+      "@type": "@id"
+    }, 
     "iot:sense": {
       "@id": "https://iotdb.org/pub/iot#sense", 
       "@type": "@id"
@@ -169,6 +177,12 @@
       "rdfs:isDefinedBy": "iot:Purpose", 
       "schema:description": "defines the semantic purpose of this attribute", 
       "schema:name": "Purpose"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#Qualifier", 
+      "@type": "rdfs:Class", 
+      "rdfs:isDefinedBy": "iot:Qualifier", 
+      "schema:name": "Qualifier"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot#Role", 
@@ -319,6 +333,17 @@
       "iot:help": "see iot-purpose:* for common values", 
       "schema:description": "what semantic purpose does this iot:Attribute serve", 
       "schema:name": "purpose"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#qualifier", 
+      "@type": "@id", 
+      "schema:name": "qualifier"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot#qualifier-period", 
+      "@type": "@id", 
+      "schema:description": "if a number it is seconds; otherwise use iot-purpose:qualifier.period.*", 
+      "schema:name": "qualifier-period"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot#sense", 

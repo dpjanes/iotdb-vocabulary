@@ -28,6 +28,14 @@
       "@id": "https://iotdb.org/pub/iot#purpose", 
       "@type": "@id"
     }, 
+    "iot:qualifier": {
+      "@id": "https://iotdb.org/pub/iot#qualifier", 
+      "@type": "@id"
+    }, 
+    "iot:qualifier-period": {
+      "@id": "https://iotdb.org/pub/iot#qualifier-period", 
+      "@type": "@id"
+    }, 
     "iot:sense": {
       "@id": "https://iotdb.org/pub/iot#sense", 
       "@type": "@id"

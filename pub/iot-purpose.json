@@ -28,6 +28,14 @@
       "@id": "https://iotdb.org/pub/iot#purpose", 
       "@type": "@id"
     }, 
+    "iot:qualifier": {
+      "@id": "https://iotdb.org/pub/iot#qualifier", 
+      "@type": "@id"
+    }, 
+    "iot:qualifier-period": {
+      "@id": "https://iotdb.org/pub/iot#qualifier-period", 
+      "@type": "@id"
+    }, 
     "iot:sense": {
       "@id": "https://iotdb.org/pub/iot#sense", 
       "@type": "@id"
@@ -869,6 +877,41 @@
       "@type": "iot:Purpose", 
       "schema:description": "when to begin / start something", 
       "schema:name": "when-start"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#qualifier.average", 
+      "@type": "iot:Qualifier", 
+      "schema:name": "average"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#qualifier.maximum", 
+      "@type": "iot:Qualifier", 
+      "schema:name": "maximum"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#qualifier.minimum", 
+      "@type": "iot:Qualifier", 
+      "schema:name": "minimum"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#qualifier.period.purchase", 
+      "@type": "iot:Qualifier", 
+      "schema:name": "purchase"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#qualifier.period.reset", 
+      "@type": "iot:Qualifier", 
+      "schema:name": "reset"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#qualifier.period.today", 
+      "@type": "iot:Qualifier", 
+      "schema:name": "today"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#qualifier.total", 
+      "@type": "iot:Qualifier", 
+      "schema:name": "total"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#chemical.C2H5OH", 
