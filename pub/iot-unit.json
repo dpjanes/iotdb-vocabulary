@@ -334,10 +334,50 @@
       "schema:name": "e"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.exbibyte", 
+      "@type": "iot:Unit", 
+      "schema:name": "exbibyte"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.gibibyte", 
+      "@type": "iot:Unit", 
+      "schema:name": "gibibyte"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.kibibyte", 
+      "@type": "iot:Unit", 
+      "schema:name": "kibibyte"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.mebibyte", 
+      "@type": "iot:Unit", 
+      "schema:name": "mebibyte"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.pebibyte", 
+      "@type": "iot:Unit", 
+      "schema:name": "pebibyte"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-unit#math.constant.pi", 
       "@type": "iot:Unit", 
       "iot:conversion": "3.14159265359", 
       "schema:name": "pi"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.tebibyte", 
+      "@type": "iot:Unit", 
+      "schema:name": "tebibyte"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.yobibyte", 
+      "@type": "iot:Unit", 
+      "schema:name": "yobibyte"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.zebibyte", 
+      "@type": "iot:Unit", 
+      "schema:name": "zebibyte"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-unit#math.fraction.parts-per-billion", 
@@ -411,10 +451,30 @@
       "schema:name": "becquerel"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.constant.gibibyte-per-second", 
+      "@type": "iot:Unit", 
+      "schema:name": "gibibyte-per-second"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.constant.kibibyte-per-second", 
+      "@type": "iot:Unit", 
+      "schema:name": "kibibyte-per-second"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.constant.mebibyte-per-second", 
+      "@type": "iot:Unit", 
+      "schema:name": "mebibyte-per-second"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-unit#speed.constant.standard-acceleration-of-free-fall", 
       "@type": "iot:Unit", 
       "iot:conversion": "9.80665*[speed.si.meter-per-second^2]", 
       "schema:name": "standard-acceleration-of-free-fall"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.constant.tebibyte-per-second", 
+      "@type": "iot:Unit", 
+      "schema:name": "tebibyte-per-second"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-unit#speed.constant.velocity-of-light", 
@@ -577,6 +637,11 @@
       "@id": "https://iotdb.org/pub/iot-unit#volume.us.teaspoon", 
       "@type": "iot:Unit", 
       "schema:name": "teaspoon"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#xxx", 
+      "@type": "iot:Unit", 
+      "schema:name": "xxx"
     }
   ]
 }
