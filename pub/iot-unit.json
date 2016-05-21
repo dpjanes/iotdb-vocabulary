@@ -328,6 +328,11 @@
       "schema:name": "second"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-unit#math.constant.byte", 
+      "@type": "iot:Unit", 
+      "schema:name": "byte"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-unit#math.constant.e", 
       "@type": "iot:Unit", 
       "iot:conversion": "2.718281828459045", 
@@ -449,6 +454,11 @@
       "@id": "https://iotdb.org/pub/iot-unit#radioactivity.si.becquerel", 
       "@type": "iot:Unit", 
       "schema:name": "becquerel"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-unit#speed.constant.byte-per-second", 
+      "@type": "iot:Unit", 
+      "schema:name": "byte-per-second"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-unit#speed.constant.gibibyte-per-second", 
