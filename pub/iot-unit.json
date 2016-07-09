@@ -647,11 +647,6 @@
       "@id": "https://iotdb.org/pub/iot-unit#volume.us.teaspoon", 
       "@type": "iot:Unit", 
       "schema:name": "teaspoon"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-unit#xxx", 
-      "@type": "iot:Unit", 
-      "schema:name": "xxx"
     }
   ]
 }

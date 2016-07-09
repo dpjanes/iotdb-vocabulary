@@ -340,6 +340,16 @@
       "schema:name": "alarm"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#alcohol", 
+      "@type": "iot:Purpose", 
+      "iot:help": "e.g. for breathalyzers", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "alcohol"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#altitude", 
       "@type": "iot:Purpose", 
       "iot:cf": [
@@ -423,6 +433,15 @@
       "iot:help": "use iot:what to indicate the particular chemical", 
       "schema:description": "sense the presence of a chemical", 
       "schema:name": "chemical"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#cold", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "cold"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#color", 
@@ -521,6 +540,25 @@
       "schema:name": "connected"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#contact", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "contact switch", 
+      "schema:name": "contact"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#current", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "current"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#cursor.down", 
       "@type": "iot:Purpose", 
       "schema:name": "down"
@@ -557,6 +595,25 @@
       "schema:name": "duration"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#energy", 
+      "@type": "iot:Purpose", 
+      "schema:name": "energy"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#energy.expended", 
+      "@type": "iot:Purpose", 
+      "schema:name": "expended"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#fire", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "fire"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#flag", 
       "@type": "iot:Purpose", 
       "schema:description": "Something that can be true or false", 
@@ -588,6 +645,31 @@
       "schema:name": "frequency"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#heart-rate", 
+      "@type": "iot:Purpose", 
+      "iot:type": "iot:type.integer", 
+      "iot:unit": "iot-unit:math.frequency.bpm", 
+      "schema:name": "heart-rate"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#heat", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "heat"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#humidity", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "humidity"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#intensity", 
       "@type": "iot:Purpose", 
       "iot:help": "for toasters, microwaves", 
@@ -604,6 +686,12 @@
       "schema:name": "latitude"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#light", 
+      "@type": "iot:Purpose", 
+      "schema:description": "typically, a light sensor", 
+      "schema:name": "light"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#longitude", 
       "@type": "iot:Purpose", 
       "iot:cf": [
@@ -611,6 +699,16 @@
         "iot-purpose:elevation"
       ], 
       "schema:name": "longitude"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#manual", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "a manually operated alarm, switch, &c", 
+      "schema:name": "manual"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#media-control", 
@@ -634,6 +732,17 @@
       "@type": "iot:Purpose", 
       "schema:description": "Message title, email subject", 
       "schema:name": "title"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#moisture", 
+      "@type": "iot:Purpose", 
+      "iot:help": "use iot:sensor.chemical / wikipedia:Water only for more technical purposes", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:description": "is something wet", 
+      "schema:name": "moisture"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#motion", 
@@ -716,6 +825,15 @@
       "schema:name": "true"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#particulates", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "particulates"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#plane", 
       "@type": "iot:Purpose", 
       "schema:name": "plane"
@@ -768,6 +886,15 @@
       "schema:name": "z"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#power", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "power"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#presence", 
       "@type": "iot:Purpose", 
       "schema:name": "presence"
@@ -784,6 +911,15 @@
       "iot:help": "combine with 'iot:what'", 
       "schema:description": "generic sensor", 
       "schema:name": "sensor"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#shatter", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "shatter"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#shuttle.backward", 
@@ -821,6 +957,24 @@
       "schema:name": "stop"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#smoke", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "smoke"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#sound", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "sound"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#temperature", 
       "@type": "iot:Purpose", 
       "schema:description": "prefer iot-purpose:sensor.temperature for detection", 
@@ -842,10 +996,44 @@
       "schema:name": "toggle"
     }, 
     {
+      "@id": "https://iotdb.org/pub/iot-purpose#uptime", 
+      "@type": "iot:Purpose", 
+      "schema:name": "uptime"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#uptime.day", 
+      "@type": "iot:Purpose", 
+      "schema:name": "day"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#uptime.hour", 
+      "@type": "iot:Purpose", 
+      "schema:name": "hour"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#uptime.month", 
+      "@type": "iot:Purpose", 
+      "schema:name": "month"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#uptime.year", 
+      "@type": "iot:Purpose", 
+      "schema:name": "year"
+    }, 
+    {
       "@id": "https://iotdb.org/pub/iot-purpose#value", 
       "@type": "iot:Purpose", 
       "schema:description": "This attribute is a value of no particular purpose", 
       "schema:name": "value"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#voltage", 
+      "@type": "iot:Purpose", 
+      "iot:type": [
+        "iot:type.number", 
+        "iot:type.boolean"
+      ], 
+      "schema:name": "voltage"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#volume", 
@@ -861,22 +1049,22 @@
       "schema:name": "volume-delta"
     }, 
     {
-      "@id": "https://iotdb.org/pub/iot-purpose#when-end", 
-      "@type": "iot:Purpose", 
-      "schema:description": "when to end / finish something", 
-      "schema:name": "when-end"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#when-instant", 
+      "@id": "https://iotdb.org/pub/iot-purpose#when", 
       "@type": "iot:Purpose", 
       "schema:description": "a date and/or time", 
-      "schema:name": "when-instant"
+      "schema:name": "when"
     }, 
     {
-      "@id": "https://iotdb.org/pub/iot-purpose#when-start", 
+      "@id": "https://iotdb.org/pub/iot-purpose#when.end", 
+      "@type": "iot:Purpose", 
+      "schema:description": "when to end / finish something", 
+      "schema:name": "end"
+    }, 
+    {
+      "@id": "https://iotdb.org/pub/iot-purpose#when.start", 
       "@type": "iot:Purpose", 
       "schema:description": "when to begin / start something", 
-      "schema:name": "when-start"
+      "schema:name": "start"
     }, 
     {
       "@id": "https://iotdb.org/pub/iot-purpose#qualifier.average", 
@@ -980,219 +1168,36 @@
       "schema:name": "H2"
     }, 
     {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.alcohol", 
+      "@id": "https://iotdb.org/pub/iot-purpose#xxx", 
       "@type": "iot:What", 
-      "iot:help": "e.g. for breathalyzers", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
+      "iot:git": [
+        "mv what.alcohol ../Purpose/alcohol", 
+        "mv what.cold ../Purpose/cold", 
+        "mv what.contact ../Purpose/contact", 
+        "mv what.current ../Purpose/current", 
+        "mv what.energy ../Purpose/energy", 
+        "mv what.energy.expended ../Purpose/energy.expended", 
+        "mv what.fire ../Purpose/fire", 
+        "mv what.heart-rate ../Purpose/heart-rate", 
+        "mv what.heat ../Purpose/heat", 
+        "mv what.humidity ../Purpose/humidity", 
+        "mv what.manual ../Purpose/manual", 
+        "mv what.moisture ../Purpose/moisture", 
+        "mv what.motion ../Purpose/motion", 
+        "mv what.particulates ../Purpose/particulates", 
+        "mv what.power ../Purpose/power", 
+        "mv what.presence ../Purpose/presence", 
+        "mv what.shatter ../Purpose/shatter", 
+        "mv what.smoke ../Purpose/smoke", 
+        "mv what.sound ../Purpose/sound", 
+        "mv what.uptime ../Purpose/uptime", 
+        "mv what.uptime.day ../Purpose/uptime.day", 
+        "mv what.uptime.hour ../Purpose/uptime.hour", 
+        "mv what.uptime.month ../Purpose/uptime.month", 
+        "mv what.uptime.year ../Purpose/uptime.year", 
+        "mv what.voltage ../Purpose/voltage"
       ], 
-      "schema:name": "alcohol"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.cold", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "cold"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.contact", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:description": "contact switch", 
-      "schema:name": "contact"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.current", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "current"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.energy", 
-      "@type": "iot:What", 
-      "schema:name": "energy"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.energy.expended", 
-      "@type": "iot:What", 
-      "schema:name": "expended"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.fire", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "fire"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.heart-rate", 
-      "@type": "iot:What", 
-      "iot:type": "iot:type.integer", 
-      "iot:unit": "iot-unit:math.frequency.bpm", 
-      "schema:name": "heart-rate"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.heat", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "heat"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.humidity", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "humidity"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.lpg", 
-      "@type": "iot:What", 
-      "schema:description": "liquified petrolium gas", 
-      "schema:name": "lpg"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.manual", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:description": "a manually operated alarm, switch, &c", 
-      "schema:name": "manual"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.moisture", 
-      "@type": "iot:What", 
-      "iot:help": "use iot:sensor.chemical / wikipedia:Water only for more technical purposes", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:description": "is something wet", 
-      "schema:name": "moisture"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.motion", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "motion"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.particulates", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "particulates"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.power", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "power"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.presence", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "presence"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.shatter", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "shatter"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.smoke", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "smoke"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.sound", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "sound"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.temperature", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "temperature"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime", 
-      "@type": "iot:What", 
-      "schema:name": "uptime"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime.day", 
-      "@type": "iot:What", 
-      "schema:name": "day"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime.hour", 
-      "@type": "iot:What", 
-      "schema:name": "hour"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime.month", 
-      "@type": "iot:What", 
-      "schema:name": "month"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.uptime.year", 
-      "@type": "iot:What", 
-      "schema:name": "year"
-    }, 
-    {
-      "@id": "https://iotdb.org/pub/iot-purpose#what.voltage", 
-      "@type": "iot:What", 
-      "iot:type": [
-        "iot:type.number", 
-        "iot:type.boolean"
-      ], 
-      "schema:name": "voltage"
+      "schema:name": "xxx"
     }
   ]
 }
