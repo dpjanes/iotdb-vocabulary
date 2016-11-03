@@ -6,7 +6,7 @@
   "dependencies": {},
   "description": "IOTDB.org",
   "devDependencies": {},
-  "homepage": "https://iotdb.org",
+  "homepage": "https://github.com/dpjanes/node-iotdb",
   "keywords": [
     "Semantic Web",
     "IOT",
